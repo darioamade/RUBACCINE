@@ -17,7 +17,7 @@
   z-index: 100;
 
   &__logo {
-    height: 4.6rem;
+    height: 3.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,12 @@
       font-weight: 400;
       font-style: normal;
       cursor: pointer;
-       
+      @media screen and (max-width: 1020px) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 3rem;
+      }
     }
   }
 }
@@ -373,7 +378,8 @@ li button .signin .hoveruv:hover {
   @media screen and (max-width: 1020px) {
     display: none;
   }
-}.hidden-icons {
+}
+.hidden-icons {
   @media screen and (min-width: 1020px) {
     display: none;
   }
