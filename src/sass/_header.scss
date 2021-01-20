@@ -312,14 +312,33 @@ li button .signin .hoveruv:hover {
 .junegull,
 .junegull-a {
   font-family: charbroiled, sans-serif;
-  font-size: 12rem;
+  font-size: 10vw;
+  // width: 100%;
   font-weight: 400;
   color: #fe0f56;
   text-transform: uppercase;
   letter-spacing: 2px;
   transform: rotate(-15deg);
   font-style: normal;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
+  @media only screen and (max-width: 1900px) {
+    font-size: 18rem;
+  }
+  @media only screen and (max-width: 900px) {
+    font-size: 16rem;
+  }
+  @media only screen and (max-width: 734px) {
+    font-size: 12rem;
+  }
+  @media only screen and (max-width: 570px) {
+    font-size: 10rem;
+  }
+  @media only screen and (max-width: 405px) {
+    font-size: 8rem;
+  }
+  @media only screen and (max-width: 405px) {
+    font-size: 6rem;
+  }
 }
 
 .text-sale {

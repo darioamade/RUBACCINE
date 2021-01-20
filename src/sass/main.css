@@ -66,6 +66,227 @@ body {
   height: 2rem;
 }
 
+.hero-sale {
+  background-image: url("/src/img/pic-16.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 10rem;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-sale {
+    margin-top: 0rem;
+  }
+}
+
+.hero-sale-container {
+  padding: 1rem 2rem;
+  min-width: 20rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero-sale-container {
+    width: 80%;
+  }
+}
+
+.hero-sale-container-top {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero-sale-container-middle {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-sale-container-bottom {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.hero-sale-container-bottom-sale, .hero-sale-container-bottom-outlet {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hero-sale-container-bottom-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12%;
+          flex: 0 0 12%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-sale-container-bottom-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-sale-container-bottom-btn {
+    display: none;
+  }
+}
+
+.hero-sale-container-bottom-btn .btn-shop {
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: 0.4625rem solid #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.525rem 4.4375rem;
+  border-radius: 0;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.hero-sale-container-bottom-btn .btn-shop:hover {
+  background-color: #595757;
+}
+
+.hero-sale-container-bottom-btn .btn-shop:focus {
+  outline: none;
+}
+
+.hero-sale-container-bottom-outlet p {
+  color: #ffffff;
+  text-transform: initial;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+}
+
+.hero-sale-container-bottom-sale p {
+  color: #ffffff;
+  text-transform: initial;
+  text-align: center;
+  font-size: 8.55rem;
+  font-weight: 700;
+  letter-spacing: 0.155rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero-sale-container-bottom-sale p {
+    font-size: 4.55rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero-sale-container-bottom-sale p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .hero-sale-container-bottom-sale p {
+    font-size: 2.5rem;
+  }
+}
+
 .btn, .btn--small, .btn--small:link, .btn--small:visited {
   background-color: transparent;
   border-radius: 10rem;
@@ -721,7 +942,7 @@ body {
 .junegull,
 .junegull-a {
   font-family: charbroiled, sans-serif;
-  font-size: 12rem;
+  font-size: 10vw;
   font-weight: 400;
   color: #fe0f56;
   text-transform: uppercase;
@@ -729,7 +950,49 @@ body {
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
   font-style: normal;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width: 1900px) {
+  .junegull,
+  .junegull-a {
+    font-size: 18rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .junegull,
+  .junegull-a {
+    font-size: 16rem;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .junegull,
+  .junegull-a {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .junegull,
+  .junegull-a {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .junegull,
+  .junegull-a {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .junegull,
+  .junegull-a {
+    font-size: 6rem;
+  }
 }
 
 .text-sale {
@@ -1300,8 +1563,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 4px solid green;
   position: relative;
+  border: 4px solid green;
 }
 
 @media screen and (max-width: 1020px) {
@@ -1496,20 +1759,19 @@ body {
 
 .align-left {
   text-align: left;
-  text-indent: 95px;
+  text-indent: 109px;
   font-family: inherit;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1000px) {
   .align-left {
-    text-indent: 0px;
-    text-align: center;
+    text-indent: 109px;
   }
 }
 
