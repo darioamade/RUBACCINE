@@ -208,25 +208,32 @@ li button .signin .hoveruv:hover {
 }
 
 .nav-link-preview {
+  border: 2px solid red;
   padding: 1rem 0;
   position: absolute;
   right: 0;
   left: 0;
   z-index: 10;
+  // margin: 0 auto;
   width: 100vw;
   height: 75vh;
   padding: 4rem 3rem;
   background-color: #fff;
+  border-bottom: 2px solid #000;
+  border-top: 1px solid #000;
   box-shadow: 0 0.8rem 5rem 2rem rgba($color-grey-dark-1, 0.1);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 1020px) {
+    display: none;
+  }
 
-  // visibility: visible;
-  // opacity: 1;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
+  // visibility: hidden;
+  // opacity: 0;
 
   transition: all 0.5s 0.2s;
 
@@ -256,7 +263,7 @@ li button .signin .hoveruv:hover {
 }
 
 .nav-link-preview-container-left {
-  flex: 0 0 75;
+  flex: 0 0 80%;
   height: 100%;
   width: 100%;
   padding: 4rem 0rem;
@@ -265,49 +272,150 @@ li button .signin .hoveruv:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
+}
+
+.text-free{
+  position: absolute;
+  bottom: 0;
+  color: rgb(154, 151, 151);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-transform: initial;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-style: normal;
+  
 }
 .nav-link-preview-container-right {
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   height: 100%;
   width: 100%;
-  padding: 4rem 2rem;
+
   &-content {
     height: 100%;
-    width: 100;
-    background-image: url('/src/img/pic-1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: animate;
-    animation-direction: alternate;
-    animation-duration: 7s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-out;
-    backface-visibility: hidden;
-    transition: all 3s;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
 
-    // &:nth-last-child(2){
-    //   background-image: url('/src/img/pic-2.jpg');
-    // }
+    &-top,
+    &-top-2,
+    &-top-3,
+    &-top-4 {
+      flex: 0 0 70%;
+      width: 100%;
+      background-image: url('/src/img/pic-17.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation-name: move;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+      backface-visibility: hidden;
+      transition: all 3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 2rem;
+      box-shadow: 1rem 1.7rem 3rem rgba(rgb(1, 1, 1), 0.08);
+      @media only screen and (max-width: 1700px){
+        flex: 0 0 60%;
+      }
+  
+    }
+    &-bottom {
+      flex: 0 0 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2rem;
+      @media only screen and (max-width: 1700px){
+        flex: 0 0 30%;
+      }
+      p {
+        color: #000;
+        font-size: 3.8rem;
+        line-height: 1.6;
+        text-transform: initial;
+        font-family: orpheuspro, serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-style: normal;
+        @media only screen and (max-width: 1700px) {
+          font-size: 2.4rem;
+         
+        }
+      }
+    }
   }
 }
 
-@keyframes animate {
+.nav-link-preview-container-right-content-top .text-sale {
+  font-size: 3rem;
+
+}
+@keyframes move {
+  0% {
+    background-image: url('/src/img/pic-17.jpg');
+  }
+
+  100% {
+    background-image: url('/src/img/pic-22.jpg');
+  }
+}
+.text-shopNow{
+    background-image: url('/src/img/pic-1.jpg');
+    animation-name: moveOn;
+}
+.nav-link-preview-container-right-content-top-2  span,
+.nav-link-preview-container-right-content-top-3  span,
+.nav-link-preview-container-right-content-top-4  span
+{
+  color: rgb(255, 255, 255);
+  font-size: 3.8rem;
+  line-height: 1.6;
+  text-transform: initial;
+  font-family: orpheuspro, serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-style: normal;
+  @media only screen and (max-width: 1700px) {
+    font-size: 2.4rem;
+   
+  }
+
+}
+
+@keyframes moveOn {
   0% {
     background-image: url('/src/img/pic-1.jpg');
   }
 
   100% {
-    background-image: url('/src/img/pic-3.jpg');
+    background-image: url('/src/img/pic-2.jpg');
   }
 }
+.nav-link-preview-container-right-content-top-3{
+  background-image: url('/src/img/pic-17.jpg');
+  animation-name: none;
+
+}
+.nav-link-preview-container-right-content-top-4{
+  background-image: url('/src/img/pic-1.jpg');
+  animation-name: none;
+
+}
+
 
 .junegull,
 .junegull-a {
@@ -340,6 +448,19 @@ li button .signin .hoveruv:hover {
     font-size: 6rem;
   }
 }
+.sale-thiny {
+  font-family: charbroiled, sans-serif;
+  font-size: 4vw;
+  width: 100%;
+  font-weight: 400;
+  color: #fe0f56;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: rotate(-12deg);
+  font-style: normal;
+  margin-bottom: .5rem;
+
+}
 
 .text-sale {
   font-family: inherit;
@@ -352,11 +473,16 @@ li button .signin .hoveruv:hover {
 }
 
 .nav__list-preview {
-  width: 50rem;
+  min-width: 30rem;
+  border: 2px solid red;
+  width: 100%;
   height: 100%;
   list-style: none;
   cursor: pointer;
   transition: all 0.2s;
+  @media only screen and (max-width: 1500px) {
+    min-width: 20rem;
+  }
   a {
     text-decoration: none;
     color: #ca0404;
@@ -368,6 +494,7 @@ li button .signin .hoveruv:hover {
     letter-spacing: 2px;
     font-style: normal;
     margin-bottom: 1rem;
+  
   }
 }
 .nav__list-preview a:hover {
@@ -386,12 +513,6 @@ li button .signin .hoveruv:hover {
   color: #444444;
   margin-bottom: 1rem;
 }
-
-// .extra {
-//   width: 100%;
-//   height: 200vh;
-//   background-color: pink;
-// }
 
 .hidden-icons-text {
   @media screen and (max-width: 1020px) {
