@@ -12,7 +12,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 10rem;
+  height: 6.4rem;
   width: 100%;
   z-index: 100;
 
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     p {
       font-family: orpheuspro, serif;
       font-size: 4rem;
@@ -34,6 +35,140 @@
       @media screen and (max-width: 768px) {
         font-size: 3rem;
       }
+      @media screen and (max-width: 357px) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  .menu-bar-icon {
+    position: fixed;
+    top: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(255, 255, 255, 0.872);
+
+    // visibility: hidden;
+    // opacity: 0;
+
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.3s;
+    z-index: 8000;
+    &-container {
+      height: 100%;
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.872);
+      box-shadow: 0rem 0.7rem 3rem rgba(rgb(1, 1, 1), 0.08);
+      box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+      z-index: 8010;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-search {
+        flex: 0 0 5%;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+      }
+      &-colections {
+        flex: 0 0 90%;
+        width: 100%;
+        height: 100%;
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        &-img-1,
+        &-img-2,
+        &-img-3,
+        &-img-4,
+        &-img-5{
+          width: 50%;
+          height: 40rem;
+          display: flex;
+          flex-direction: column;
+          img{
+            flex: 0 0 90%;
+            width: 100%;
+            background-image: url('/src/img/pic-3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 1rem;
+
+          }
+          p{
+            flex: 0 0 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            font-family: inherit;
+            font-weight: 600;
+            letter-spacing: 2px;
+
+          }
+
+        }
+        &-img-2{
+          width: 50%;
+          height: 40rem;
+      
+
+        }
+        &-img-3{
+          width: 50%;
+          height: 40rem;
+      
+
+        }
+        &-img-4{
+          width: 50%;
+          height: 40rem;
+      
+
+        }
+        &-img-5{
+          width: 50%;
+          height: 40rem;
+       
+
+        }
+        &-img-6{
+          width: 50%;
+          height: 40rem;
+       
+
+        }
+    
+      }
+      &-signin {
+        flex: 0 0 5%;
+        height: 100%;
+        width: 100%;
+        border: 2px solid red;
+        padding: 1rem 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        p {
+          font-size: 1.6rem;
+          font-family: inherit;
+          font-weight: 600;
+        }
+      }
     }
   }
 }
@@ -41,9 +176,11 @@
 .search {
   position: absolute;
   top: 10rem;
+  top: 6.4rem; // BUG
   right: 0;
   left: 0;
   height: 8rem;
+  height: 6.4rem; //BUG
   border-top: 0.5px solid #000;
   background-color: #fff;
   display: flex;
@@ -112,7 +249,14 @@ li button .signin .hoveruv:hover {
 }
 .nav {
   align-self: stretch;
-  margin-right: 2.5rem;
+  margin: 0 1.5rem;
+  //BUG
+  @media only screen and (max-width: 550px) {
+    margin-right: 0.5rem;
+  }
+  @media only screen and (max-width: 375px) {
+    margin-right: 0rem;
+  }
 
   &__list {
     list-style: none;
@@ -134,13 +278,17 @@ li button .signin .hoveruv:hover {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem; // BUG
+    // padding-right: 1rem;
+    @media only screen and (max-width: 1020px) {
+      padding: 0 0.445rem;
+    }
+    @media only screen and (max-width: 375px) {
+      padding: 0 0.145rem;
+    }
     transition: all 0.3s;
     display: flex;
     align-items: center;
-    // span{
-    //   color: red;
-    // }
     span:hover {
       border-bottom: 2px solid #444444;
     }
@@ -275,7 +423,7 @@ li button .signin .hoveruv:hover {
   position: relative;
 }
 
-.text-free{
+.text-free {
   position: absolute;
   bottom: 0;
   color: rgb(154, 151, 151);
@@ -285,7 +433,6 @@ li button .signin .hoveruv:hover {
   font-weight: 400;
   letter-spacing: 2px;
   font-style: normal;
-  
 }
 .nav-link-preview-container-right {
   flex: 0 0 20%;
@@ -326,10 +473,9 @@ li button .signin .hoveruv:hover {
       align-items: center;
       padding-bottom: 2rem;
       box-shadow: 1rem 1.7rem 3rem rgba(rgb(1, 1, 1), 0.08);
-      @media only screen and (max-width: 1700px){
+      @media only screen and (max-width: 1700px) {
         flex: 0 0 60%;
       }
-  
     }
     &-bottom {
       flex: 0 0 20%;
@@ -339,7 +485,7 @@ li button .signin .hoveruv:hover {
       justify-content: flex-start;
       align-items: center;
       margin-top: 2rem;
-      @media only screen and (max-width: 1700px){
+      @media only screen and (max-width: 1700px) {
         flex: 0 0 30%;
       }
       p {
@@ -353,7 +499,6 @@ li button .signin .hoveruv:hover {
         font-style: normal;
         @media only screen and (max-width: 1700px) {
           font-size: 2.4rem;
-         
         }
       }
     }
@@ -362,7 +507,6 @@ li button .signin .hoveruv:hover {
 
 .nav-link-preview-container-right-content-top .text-sale {
   font-size: 3rem;
-
 }
 @keyframes move {
   0% {
@@ -373,14 +517,13 @@ li button .signin .hoveruv:hover {
     background-image: url('/src/img/pic-22.jpg');
   }
 }
-.text-shopNow{
-    background-image: url('/src/img/pic-1.jpg');
-    animation-name: moveOn;
+.text-shopNow {
+  background-image: url('/src/img/pic-1.jpg');
+  animation-name: moveOn;
 }
-.nav-link-preview-container-right-content-top-2  span,
-.nav-link-preview-container-right-content-top-3  span,
-.nav-link-preview-container-right-content-top-4  span
-{
+.nav-link-preview-container-right-content-top-2 span,
+.nav-link-preview-container-right-content-top-3 span,
+.nav-link-preview-container-right-content-top-4 span {
   color: rgb(255, 255, 255);
   font-size: 3.8rem;
   line-height: 1.6;
@@ -391,9 +534,7 @@ li button .signin .hoveruv:hover {
   font-style: normal;
   @media only screen and (max-width: 1700px) {
     font-size: 2.4rem;
-   
   }
-
 }
 
 @keyframes moveOn {
@@ -405,17 +546,14 @@ li button .signin .hoveruv:hover {
     background-image: url('/src/img/pic-2.jpg');
   }
 }
-.nav-link-preview-container-right-content-top-3{
+.nav-link-preview-container-right-content-top-3 {
   background-image: url('/src/img/pic-17.jpg');
   animation-name: none;
-
 }
-.nav-link-preview-container-right-content-top-4{
+.nav-link-preview-container-right-content-top-4 {
   background-image: url('/src/img/pic-1.jpg');
   animation-name: none;
-
 }
-
 
 .junegull,
 .junegull-a {
@@ -458,8 +596,7 @@ li button .signin .hoveruv:hover {
   letter-spacing: 2px;
   transform: rotate(-12deg);
   font-style: normal;
-  margin-bottom: .5rem;
-
+  margin-bottom: 0.5rem;
 }
 
 .text-sale {
@@ -474,8 +611,8 @@ li button .signin .hoveruv:hover {
 
 .nav__list-preview {
   min-width: 30rem;
-  border: 2px solid red;
-  width: 100%;
+  width: 20%;
+  //width: 100%; was before
   height: 100%;
   list-style: none;
   cursor: pointer;
@@ -494,7 +631,6 @@ li button .signin .hoveruv:hover {
     letter-spacing: 2px;
     font-style: normal;
     margin-bottom: 1rem;
-  
   }
 }
 .nav__list-preview a:hover {

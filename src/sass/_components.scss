@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 10rem;
+  margin-top: 6.4rem;// BUG
   flex: 1;
-  margin-top: 10rem;
   @media screen and (max-width: 768px) {
     margin-top: 0rem;
   }
@@ -258,6 +258,7 @@
     height: 2.5rem;
     width: 2.5rem;
     fill: #fff;
+    border: 2px solid red;
   }
 }
 
@@ -364,6 +365,7 @@
 .women-tab {
   flex: 1;
   margin-top: 10rem;
+  margin-top: 6.4rem; // BUG
   @media screen and (max-width: 768px) {
     margin-top: 0rem;
   }
