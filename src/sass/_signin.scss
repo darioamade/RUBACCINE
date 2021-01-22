@@ -8,6 +8,10 @@
   width: 100vw;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.858);
+  //   visibility: visible;
+//   opacity: 1;
+visibility: hidden;
+opacity: 0;
 }
 .signin-account {
   position: fixed;
@@ -26,10 +30,10 @@
   @media only screen and (max-width: 1020px) {
     display: none;
   }
-  visibility: visible;
-  opacity: 1;
-  // visibility: hidden;
-  // opacity: 0;
+//   visibility: visible;
+//   opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   transition: all 0.5s 0.2s;
   &-container {
     width: 80rem;

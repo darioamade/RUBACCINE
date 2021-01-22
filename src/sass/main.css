@@ -90,6 +90,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -3534,6 +3536,8 @@ strong {
   width: 100vw;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.858);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .signin-account {
@@ -3555,8 +3559,8 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
 }
@@ -3724,5 +3728,98 @@ strong {
 
 .prime-svg {
   height: 3rem;
+}
+
+.whishlist {
+  background-color: white;
+  margin-top: 6.4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  width: 100vw;
+  border-top: 1px solid #161616;
+  overflow-y: scroll;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.whishlist-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.whishlist-container-title {
+  min-height: 20rem;
+  width: 100%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.whishlist-container-title .text-main {
+  margin-bottom: 3rem;
+}
+
+.whishlist-container-title .text-error {
+  font-size: 1.4rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.whishlist-container-items {
+  min-height: 80vh;
+  width: 100%;
+  background-color: royalblue;
+}
+
+.whishlist-container-info {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
