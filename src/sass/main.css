@@ -3815,9 +3815,133 @@ strong {
   border: 4px solid greenyellow;
 }
 
-.whishlist-container-title-grid .img {
-  width: 20rem;
-  height: 30rem;
+.whishlist-container-title-grid .whishlist-img {
+  width: 50rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ccc;
+}
+
+.whishlist-container-title-grid .whishlist-img-stock {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  min-height: 4rem;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+}
+
+.whishlist-container-title-grid .whishlist-img-stock-close {
+  position: absolute;
+  right: 0rem;
+  top: 1.4rem;
+  -webkit-transform: translate(-1rem, 0rem);
+          transform: translate(-1rem, 0rem);
+}
+
+.whishlist-container-title-grid .whishlist-img-stock-close .icon-close {
+  width: 2rem;
+  height: 2rem;
+  fill: #444444;
+}
+
+.whishlist-container-title-grid .whishlist-img-stock p {
+  font-size: 1.2rem;
+  line-height: 50px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  color: #242424;
+  letter-spacing: .5px;
+}
+
+.whishlist-container-title-grid .whishlist-img-content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  min-height: 60rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1020px) {
+  .whishlist-container-title-grid .whishlist-img-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.whishlist-container-title-grid .whishlist-img-content-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+  width: 100%;
+  min-height: 45rem;
+}
+
+.whishlist-container-title-grid .whishlist-img-content-size {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  background-color: #86d5d1;
+  width: 100%;
+  min-height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whishlist-container-title-grid .whishlist-img-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  min-height: 20rem;
+  width: 100%;
+  background-color: #c4d586;
 }
 
 .whishlist-container-title-btn-black {
@@ -3833,7 +3957,6 @@ strong {
           align-items: center;
   width: 100%;
   height: auto;
-  border: 2px solid red;
 }
 
 .whishlist-container-info {
@@ -3973,5 +4096,78 @@ strong {
     min-height: auto;
     padding: 2rem;
   }
+}
+
+.btn-add {
+  background-color: black;
+  color: white;
+  border: 0.0625rem solid #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.525rem 4.4375rem;
+  border-radius: 0;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-add:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid #444444;
+}
+
+.whishlist-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.selectdiv:after {
+  position: absolute;
+  content: "<>";
+  font: 17px;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* Add some styling */
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  word-break: normal;
 }
 /*# sourceMappingURL=main.css.map */
