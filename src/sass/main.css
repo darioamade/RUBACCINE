@@ -891,6 +891,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: .5px solid #444444;
 }
 
 .header__logo {
@@ -3731,10 +3732,11 @@ strong {
 }
 
 .whishlist {
-  margin-top: 6.4rem;
+  margin: 0 auto;
 }
 
 .whishlist-container {
+  padding-top: 6.4rem;
   min-width: 100vw;
   min-height: 25rem;
   margin: 0 auto;
@@ -3766,7 +3768,7 @@ strong {
 }
 
 .whishlist-container-title-content {
-  min-height: 25rem;
+  min-height: 15rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3785,7 +3787,7 @@ strong {
 }
 
 .whishlist-container-title .text-main {
-  margin: 3rem 0;
+  margin: 2rem;
 }
 
 .whishlist-container-title .text-error {
@@ -3797,6 +3799,7 @@ strong {
 
 .whishlist-container-title-grid {
   padding: 2rem 4rem;
+  padding: 2rem;
   min-height: 0rem;
   background-color: white;
   width: 100%;
@@ -3808,16 +3811,29 @@ strong {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 4px solid greenyellow;
+}
+
+@media screen and (max-width: 1020px) {
+  .whishlist-container-title-grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 95vw;
+  }
 }
 
 .whishlist-container-title-grid .whishlist-img {
-  width: 50rem;
-  height: auto;
+  max-width: 43rem;
+  min-width: 24vw;
+  min-height: calc(62vh - 6.4rem);
+  max-height: calc(95vh + 6.4rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3831,7 +3847,14 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #ccc;
+  border: 0.5px solid #ccc;
+}
+
+@media screen and (max-width: 1020px) {
+  .whishlist-container-title-grid .whishlist-img {
+    max-width: 43rem;
+    max-width: 95vw;
+  }
 }
 
 .whishlist-container-title-grid .whishlist-img-stock {
@@ -3853,18 +3876,24 @@ strong {
   padding: 0 2rem;
 }
 
+@media screen and (max-width: 1020px) {
+  .whishlist-container-title-grid .whishlist-img-stock {
+    border-bottom: 0.5px solid #ccc;
+  }
+}
+
 .whishlist-container-title-grid .whishlist-img-stock-close {
   position: absolute;
   right: 0rem;
-  top: 1.4rem;
+  top: 1.8rem;
   -webkit-transform: translate(-1rem, 0rem);
           transform: translate(-1rem, 0rem);
 }
 
 .whishlist-container-title-grid .whishlist-img-stock-close .icon-close {
-  width: 2rem;
-  height: 2rem;
-  fill: #444444;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #636262;
 }
 
 .whishlist-container-title-grid .whishlist-img-stock p {
@@ -3875,14 +3904,14 @@ strong {
   text-transform: uppercase;
   float: left;
   color: #242424;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .whishlist-container-title-grid .whishlist-img-content {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
-  min-height: 60rem;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  min-height: 40rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3899,6 +3928,7 @@ strong {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    min-height: calc(62vh - 6.4rem);
   }
 }
 
@@ -3910,16 +3940,111 @@ strong {
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
   width: 100%;
-  min-height: 45rem;
+  height: 30rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .whishlist-container-title-grid .whishlist-img-content-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .whishlist-container-title-grid .whishlist-img-content-size {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
-  background-color: #86d5d1;
   width: 100%;
-  min-height: 15rem;
+  min-height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+  .whishlist-container-title-grid .whishlist-img-content-size {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    width: 100%;
+  }
+}
+
+.whishlist-container-title-grid .whishlist-img-content-size-color-list {
+  min-height: 4rem;
+  width: 100%;
+  border: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whishlist-container-title-grid .whishlist-img-content-size-color-list-twoSquares {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.whishlist-container-title-grid .whishlist-img-content-size-color-list-twoSquares .wishlist-product-list {
+  width: 3rem;
+  height: 3rem;
+  border: .5px solid #575656;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.whishlist-container-title-grid .whishlist-img-content-size-color-list-twoSquares .wishlist-product-list span {
+  font-size: 1.4rem;
+}
+
+.whishlist-container-title-grid .whishlist-img-content-size-container {
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3941,7 +4066,47 @@ strong {
           flex: 0 0 30%;
   min-height: 20rem;
   width: 100%;
-  background-color: #c4d586;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whishlist-container-title-grid .whishlist-img-btn p {
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #000000;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.whishlist-container-title-grid .whishlist-img-btn button {
+  width: 70%;
+  cursor: not-allowed;
+  background-color: #ddd;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.whishlist-container-title-grid .whishlist-img-btn button:focus {
+  outline: none;
+}
+
+.whishlist-container-title-grid .whishlist-img-btn button:hover {
+  color: #fff;
+  background-color: #ddd;
+  border: none;
 }
 
 .whishlist-container-title-btn-black {
@@ -3978,6 +4143,21 @@ strong {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.text-list,
+.text-list-u {
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #000000;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: .5px;
+  margin: 1rem 0;
+}
+
+.text-list-u {
+  text-decoration: underline;
 }
 
 .h4 {
@@ -4130,13 +4310,28 @@ strong {
      object-fit: fill;
 }
 
+.swatch {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.text-clothes-description {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #242424;
+  font-family: inherit;
+  text-transform: initial;
+}
+
 select::-ms-expand {
   display: none;
 }
 
 .selectdiv:after {
   position: absolute;
-  content: "<>";
+  content: '<>';
   font: 17px;
   color: #333;
   -webkit-transform: rotate(90deg);
