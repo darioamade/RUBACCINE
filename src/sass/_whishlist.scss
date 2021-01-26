@@ -1,21 +1,11 @@
 .whishlist {
-  // margin-top: 6.4rem; // BUG
-  //  position: absolute;
-  //  top: 50%;
-  //  right: 50%;
-  //  transform: translate(-50%, -50%);
-  // position: fixed;
-
-  // top: 0;
-  // right: 0;
-  // left: 0;
-  // bottom: 0;
-  // z-index: 9000;
-  // min-width: 100vw;
-  // min-height: 100%;
-  // overflow-y: scroll;
-  // white-space: nowrap;
   margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+
+  // visibility: visible;
+  // opacity: 1;
+  
   &-container {
     padding-top: 6.4rem;
     min-width: 100vw;
@@ -26,6 +16,10 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    display: none;
+
+
+ 
 
     &-title {
       flex: 1;
@@ -66,11 +60,10 @@
         @media screen and (max-width: 1020px) {
           justify-content: center;
           align-items: center;
-          min-width: 95vw; //BUG
+          min-width: 95vw;
         }
 
         .whishlist-img {
-          // Fix size later 😃
           max-width: 43rem;
           min-width: 24vw;
           min-height: calc(62vh - 6.4rem);
@@ -123,9 +116,8 @@
           }
           &-content {
             flex: 0 0 40%;
-            min-height: 40rem; //BUG
+            min-height: 40rem;
             width: 100%;
-            // border: 4px solid red;
 
             display: flex;
             flex-direction: column;
@@ -140,8 +132,7 @@
               height: 30rem;
               @media screen and (max-width: 1020px) {
                 flex: 0 0 50%;
-                width: 100%;
-                height: 100%;
+                
               }
             }
             &-size {
@@ -154,12 +145,12 @@
               align-items: center;
               @media screen and (max-width: 1020px) {
                 flex: 0 0 50%;
-                width: 100%;
+              
+                justify-content: flex-start;
               }
               &-color-list {
                 min-height: 4rem;
                 width: 100%;
-                border: 2px solid green;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -175,8 +166,8 @@
                   .wishlist-product-list {
                     width: 3rem;
                     height: 3rem;
-                     border: .5px solid #575656;
-               
+                    border: 0.5px solid #575656;
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -185,6 +176,16 @@
                       font-size: 1.4rem;
                     }
                   }
+                }
+              }
+              &-clothes-form {
+                // IMPORTANT
+                border: 1px solid #ccc;
+                width: 70%;
+                // min-width: 4rem;
+                min-height: auto;
+                @media screen and (max-width: 1020px) {
+                  width: 100%;
                 }
               }
 
@@ -207,6 +208,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            position: relative;
             p {
               font-size: 1.1rem;
               font-family: inherit;
@@ -251,6 +254,8 @@
       justify-content: center;
       align-items: center;
       align-content: center;
+
+      
     }
   }
 }
@@ -259,13 +264,14 @@
 
 .text-list,
 .text-list-u {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-family: inherit;
   color: #000000;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin: 1rem 0;
+  cursor: pointer;
 }
 .text-list-u {
   text-decoration: underline;
@@ -346,7 +352,7 @@
 
 .btn-add {
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   border: 0.0625rem solid #fff;
   text-transform: uppercase;
   display: inline-block;
@@ -358,6 +364,7 @@
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.125rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   transition: all 0.2s;
   &:hover {
@@ -377,56 +384,132 @@
   width: 100%;
   height: 100%;
   object-fit: fill;
+  transform: scale(5.9);
+  // overflow: hidden;
 }
 
 .text-clothes-description {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #242424;
   font-family: inherit;
   text-transform: initial;
+  margin-bottom: 1rem;
 }
 // FORM DROPDOWN
 
-select::-ms-expand {
+.icon-arrows {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #000000;
+}
+
+//NOTE custom input select dropdown
+
+.select-box {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  background-color: #fff;
+  color: #444444;
+  font-weight: 400;
+  font-size: 1.2rem;
+  max-height: 0;
+  width: 100%;
+  min-height: auto;
+  height: auto;
+  opacity: 0;
+  transition: all 0.2s;
+  // border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: #f8f8f8;
+  // border-radius: 8px;
+  //  margin-bottom: 8px;
+  //  border: .5px solid #ccc;
+  color: #444444;
+  position: relative;
+  font-size: 1.2rem;
+
+  order: 0;
+}
+
+.selected::after {
+  content: '';
+  background: url('/src/img/entypo_select-arrows.svg');
+  // background: url('/src/img/arrow-drow-Vector.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 1.5rem;
+  right: 10px;
+  // top: 5px;
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 8.4rem;
+  opacity: 1;
+  overflow-y: scroll;
+}
+//NOTE rotation down arrow
+.select-box .options-container.active + .selected::after {
+  // transform: rotate(180deg);
+  transform: rotate(0deg);
+  // top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  overflow: hidden;
+  display: none; //Removing scroll bar
+}
+//NOTE SCROLL BAR CUSTOM
+// .select-box .options-container::-webkit-scrollbar{
+//   width: 8px;
+//   background: #e10e0e;
+//   border-radius: 0 8px 8px 0;
+// }
+// .select-box .options-container::-webkit-scrollbar-thumb{
+//   background: #7ee10e;
+//   border-radius: 0 8px 8px 0;
+// }
+
+//NOTE SCROLL BAR CUSTOM
+.select-box .option,
+.selected {
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+}
+
+.selected {
+  padding: 1.2rem 0.8rem;
+}
+.select-box .option:hover {
+  background: #f8f8f8;
+}
+
+.select-box label {
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+}
+
+.select-box .option .radio {
   display: none;
 }
 
-.selectdiv:after {
-  position: absolute;
-  content: '<>';
-  font: 17px;
-  color: #333;
-  transform: rotate(90deg);
-  right: 11px;
-  /*Adjust for position however you want*/
-
-  top: 18px;
-  padding: 0 0 2px;
-  border-bottom: 1px solid #999;
-  /*left line */
-
-  pointer-events: none;
+.option {
+  // padding: 1.2rem 0rem;
+  height: 3.5rem;
+  margin-left: -4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-
-.selectdiv select {
-  appearance: none;
-  /* Add some styling */
-
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: 50px;
-  float: right;
-  margin: 5px 0px;
-  padding: 0px 24px;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #333;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  word-break: normal;
-}
-
-// FORM DROPDOWN  END

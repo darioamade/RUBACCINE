@@ -31,16 +31,10 @@
 //   clicked.classList.add('operations__tab--active');
 // })
 
-
-
-
-
 // iconFooterOpen.addEventListener('click', function(e){
-//   const 
-
+//   const
 
 // })
-
 
 /* 
 
@@ -49,3 +43,44 @@
 tabContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operations__tab');
 */
+
+/*  FORM DROWDOWN-SIZE */
+/* 
+const selected = document.querySelector('.selected');
+const optionsConatiner = document.querySelector('.options-container');
+const optionsList = document.querySelectorAll('.option');
+const sameSize = document.querySelector('.same-size');
+const sizeGuide = document.querySelector('.size-guide');
+const btnNotClear = document.querySelector('.btn-not-clear');
+const btnReset = document.querySelector('.reset-size-details');
+
+selected.addEventListener('click', function () {
+  optionsConatiner.classList.toggle('active');
+  sizeGuide.innerHTML = '';
+  btnNotClear.style.display = 'none';
+});
+
+optionsList.forEach(el => {
+  el.addEventListener('click', () => {
+    selected.innerHTML = el.querySelector('label').innerHTML;
+    optionsConatiner.classList.remove('active');
+    sameSize.innerHTML = '';
+    sameSize.innerHTML = selected.innerHTML;
+    btnNotClear.style.display = 'inline';
+    btnNotClear.style.cursor = 'pointer';
+    btnNotClear.style.backgroundColor = 'black';
+  
+  });
+});
+
+btnReset.addEventListener('click', function () {
+  selected.innerHTML = '-';
+  sameSize.innerHTML = '';
+  btnReset.innerHTML = 'EDIT DETAILS';
+  btnNotClear.style.display = 'inline';
+  btnNotClear.style.cursor = 'not-allowed';
+  btnNotClear.style.backgroundColor = '#ddd';
+ 
+}); */
+
+//closest
