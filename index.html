@@ -41,40 +41,326 @@
               </ul>
             </div>
           </div>
-          <hr class="hr-menu" />
-          <div class="showcase-container-filter">
-            <div class="showcase-container-filter-filters">
+          <hr class="hr5"/>
+          <div class="showcase-container-filter ">
+            <!--  Remove visibility 😆  category stil 4 to go-->
+            <div class="category-page-filter-list">
+              <div class="category-page-filter-list-selectors">
+                  <div class="options-box ">
+                      <div class="option">
+                      <input type="checkbox" id="clothersSize">
+                      <label for="clothersSize" class="text-radio">Coats & Jackets</label>
+                      </div>
+                      <div class="option">
+                       <input type="checkbox" class="radio" id="Leather Jackets" name="category" >
+                       <label for="Leather Jackets" class="text-radio">Leather Jackets</label>
+                     </div>
+                     <div class="option">
+                       <input type="checkbox" class="radio" id="Clothing" name="category" >
+                       <label for="Clothing" class="text-radio">Clothing</label>
+                     </div>
+                     <div class="option">
+                       <input type="checkbox" class="radio" id="Knitwear" name="category" >
+                       <label for="Knitwear" class="text-radio">Knitwear</label>
+                     </div>
+                     <div class="option">
+                       <input type="checkbox" class="radio" id="Trousers & Leggings" name="category" >
+                       <label for="Trousers & Leggings" class="text-radio">Trousers & Leggings</label>
+                     </div> 
+                     <div class="option">
+                      <input type="checkbox" class="radio" id="Handbags" name="category" >
+                      <label for="Handbags" class="text-radio">Handbags</label>
+                    </div> 
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Playsuits & Jumpsuits" name="category" >
+                      <label for="Playsuits & Jumpsuits" class="text-radio">Playsuits & Jumpsuits</label>
+                    </div> 
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Tops & Shirts" name="category" >
+                      <label for="Tops & Shirts" class="text-radio">Tops & Shirts</label>
+                    </div> 
+                  </div> 
+                  <div class="options-content ">
+                    <div class="option">
+                       <input type="checkbox" class="radio" id="Dresses" name="category" >
+                       <label for="Dresses" class="text-radio">Dresses</label>
+                     </div>
+                     <div class="option">
+                      <input type="checkbox" class="radio" id="Shirts" name="category" >
+                      <label for="Shirts" class="text-radio">Shirts</label>
+                    </div>
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Accessories" name="category" >
+                      <label for="Accessories" class="text-radio">Accessories</label>
+                    </div>
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Wallets" name="category" >
+                      <label for="Wallets" class="text-radio">Wallets</label>
+                    </div>
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Cardholders" name="category" >
+                      <label for="Cardholders" class="text-radio">Cardholders</label>
+                    </div> 
+                    <div class="option">
+                     <input type="checkbox" class="radio" id="Skirts & Shorts" name="category" >
+                     <label for="Skirts & Shorts" class="text-radio">Skirts & Shorts</label>
+                   </div> 
+                 
+                 </div>  
 
+              </div>
+              <hr class="hr5" />
+              <div class="category-page-filter-list-clear">
+                <div class="category-page-filter-list-clear-left">
+                  <span class="text-filter " >CLEAR ALL</span>
+                </div>
+                <p class="vl2"></p>
+                <div class="category-page-filter-list-clear-right">
+                  <span class="text-filter ">CLOSE</span>
+                </div>
+              </div>
+              <hr class="hr7" />
             </div>
-            <!-- <p class="vl1"></p> -->
-       
+
+            <div class="showcase-container-filter-filters">
+              <div class="showcase-container-filter-filters-category">
+                <div class="showcase-container-filter-filters-category-item">
+                  <span class="text-filter " style="border-bottom: none;">FILTERS:</span>
+                </div>
+                <div class="showcase-container-filter-filters-category-item invisble">
+                  <div class="selected-sort">
+                    <span class="text-filter ">category</span>
+                  </div>
+                </div>
+                <div class="showcase-container-filter-filters-category-item invisble">
+                  <div class="selected-sort">
+                    <span class="text-filter ">Colour</span>
+                  </div>
+                </div>
+                <div class="showcase-container-filter-filters-category-item invisble">
+                  <div class="selected-sort">
+                    <span class="text-filter ">Size </span>
+                  </div>
+                </div>
+             
+                <div class="showcase-container-filter-filters-category-item invisble" style="width: 12rem;">
+                  <div class="selected-sort">
+                    <span class="text-filter " >Price Range</span>
+                  </div>
+                </div>
+
+              </div>
+              <p class="vl2"></p>
+              <div class="showcase-container-filter-filters-sort">
+              
+                <div class="showcase-container-filter-filters-category-item">
+                  <span class="text-filter ">SORT BY</p>
+                </div>
+              </div>
+            
+            </div>
+            <hr class="hr6" />
             <div class="showcase-container-filter-pagination">
+            
               <div class="showcase-container-filter-pagination-icons">
-                <p>VIEW:</p>
-                <svg class="icon-page">
+                <p class="text-list">VIEW:</p>
+                <svg class="icon-page switch-single-page">
                   <use href="src/img/sprite.svg#icon-stop2"></use>
                 </svg>
-                <svg class="icon-page">
+                <svg class="icon-page switch-double-page">
                   <use href="src/img/sprite.svg#icon-pause2"></use>
                 </svg>
 
               </div>
               <div class="showcase-container-filter-pagination-pages">
-                <button class="btn--inline pagination__btn--prev">
+                <button class="btn--pag underline agination__btn--prev">
                   <span>1</span>
                 </button>
-                <button class="btn--inline pagination__btn--next">
+                <button class="btn--pag pagination__btn--next">
                   <span>2</span>
                 </button> 
-                <button class="btn--inline pagination__btn--next">
+                <button class="btn--pag pagination__btn--next">
                   <span>3</span>
                 </button> 
-                <button class="btn--inline pagination__btn--next-all">
+                <button class="btn--pag pagination__btn--next-all">
                   <span>VIEW ALL</span>
                 </button> 
               </div>
 
             </div>
+
+          </div>
+          <div class="showcase-container-gallery">
+           <div class="showcase-container-gallery-grid">
+             <div class="showcase-container-gallery-grid-item">
+               <div class="showcase-container-gallery-grid-item-img">
+                 <div class="size-slider">
+                   <div class="size-slider-title">
+                    <p class="text-bag">In Stock</p>
+                   </div>
+              
+                   <div class="size-slider-num">
+                     <p class="text-size-uk active" >  UK 2</p>
+                     <p class="text-size-uk active">UK 4</p>
+                     <p class="text-size-uk"> UK 6 </p>
+                     <p class="text-size-uk">UK 8 </p>
+                     <p class="text-size-uk"> UK 10</p>
+                     <p class="text-size-uk">UK 12</p>
+                     <p class="text-size-uk active"> UK 14</p>
+                  
+                   </div>
+                   
+
+                 </div>
+                 <div class="round-display">
+                   70% OFF
+                 </div>
+                 <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+               </div>
+               <div class="showcase-container-gallery-grid-item-description">
+                 <div class="whishlist-icon">
+                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                  <svg class="icon-page ">
+                    <use href="src/img/sprite.svg#icon-heart"></use>
+                  </svg>
+
+                 </div>
+               
+                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                  <p class="text-thinny">1 COLOUR</p>
+                  <button class="btn-hidden">ADD TO BAG</button>
+               </div>
+
+             </div>
+              <div class="showcase-container-gallery-grid-item">
+               <div class="showcase-container-gallery-grid-item-img">
+                 <div class="size-slider">
+                   <div class="size-slider-title">
+                    <p class="text-bag">In Stock</p>
+                   </div>
+              
+                   <div class="size-slider-num">
+                     <p class="text-size-uk active" >  UK 2</p>
+                     <p class="text-size-uk active">UK 4</p>
+                     <p class="text-size-uk"> UK 6 </p>
+                     <p class="text-size-uk">UK 8 </p>
+                     <p class="text-size-uk"> UK 10</p>
+                     <p class="text-size-uk">UK 12</p>
+                     <p class="text-size-uk active"> UK 14</p>
+                  
+                   </div>
+                   
+
+                 </div>
+                 <div class="round-display">
+                   70% OFF
+                 </div>
+                 <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+               </div>
+               <div class="showcase-container-gallery-grid-item-description">
+                 <div class="whishlist-icon">
+                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                  <svg class="icon-page ">
+                    <use href="src/img/sprite.svg#icon-heart"></use>
+                  </svg>
+
+                 </div>
+               
+                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                  <p class="text-thinny">1 COLOUR</p>
+                  <button class="btn-hidden">ADD TO BAG</button>
+               </div>
+
+             </div>
+             <div class="showcase-container-gallery-grid-item">
+              <div class="showcase-container-gallery-grid-item-img">
+                <div class="size-slider">
+                  <div class="size-slider-title">
+                   <p class="text-bag">In Stock</p>
+                  </div>
+             
+                  <div class="size-slider-num">
+                    <p class="text-size-uk active" >  UK 2</p>
+                    <p class="text-size-uk active">UK 4</p>
+                    <p class="text-size-uk"> UK 6 </p>
+                    <p class="text-size-uk">UK 8 </p>
+                    <p class="text-size-uk"> UK 10</p>
+                    <p class="text-size-uk">UK 12</p>
+                    <p class="text-size-uk active"> UK 14</p>
+                 
+                  </div>
+                  
+
+                </div>
+                <div class="round-display">
+                  70% OFF
+                </div>
+                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+              </div>
+              <div class="showcase-container-gallery-grid-item-description">
+                <div class="whishlist-icon">
+                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                 <svg class="icon-page ">
+                   <use href="src/img/sprite.svg#icon-heart"></use>
+                 </svg>
+
+                </div>
+              
+                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                 <p class="text-thinny">1 COLOUR</p>
+                 <button class="btn-hidden">ADD TO BAG</button>
+              </div>
+
+            </div>
+            <div class="showcase-container-gallery-grid-item">
+              <div class="showcase-container-gallery-grid-item-img">
+                <div class="size-slider">
+                  <div class="size-slider-title">
+                   <p class="text-bag">In Stock</p>
+                  </div>
+             
+                  <div class="size-slider-num">
+                    <p class="text-size-uk active" >  UK 2</p>
+                    <p class="text-size-uk active">UK 4</p>
+                    <p class="text-size-uk"> UK 6 </p>
+                    <p class="text-size-uk">UK 8 </p>
+                    <p class="text-size-uk"> UK 10</p>
+                    <p class="text-size-uk">UK 12</p>
+                    <p class="text-size-uk active"> UK 14</p>
+                 
+                  </div>
+                  
+
+                </div>
+                <div class="round-display">
+                  70% OFF
+                </div>
+                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+              </div>
+              <div class="showcase-container-gallery-grid-item-description">
+                <div class="whishlist-icon">
+                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                 <svg class="icon-page ">
+                   <use href="src/img/sprite.svg#icon-heart"></use>
+                 </svg>
+
+                </div>
+              
+                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                 <p class="text-thinny">1 COLOUR</p>
+                 <button class="btn-hidden">ADD TO BAG</button>
+              </div>
+
+            </div>
+           </div>
 
           </div>
         </div>
