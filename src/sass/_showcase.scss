@@ -355,6 +355,18 @@
   }
 }
 
+// Change view img double
+.change-to-double-view {
+  @media screen and (max-width: 1020px) {
+    grid-auto-rows: minmax(70rem, auto);
+    grid-template-columns: repeat(2, 46%);
+    gap: 3rem;
+  }
+}
+
+
+
+//NOTE Typegraphy ///////////
 .text-with-background {
   color: white;
   display: inline;

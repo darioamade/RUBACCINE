@@ -5069,6 +5069,15 @@ strong {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1020px) {
+  .change-to-double-view {
+    grid-auto-rows: minmax(70rem, auto);
+    -ms-grid-columns: (46%)[2];
+        grid-template-columns: repeat(2, 46%);
+    gap: 3rem;
+  }
+}
+
 .text-with-background {
   color: white;
   display: inline;

@@ -85,6 +85,20 @@ btnReset.addEventListener('click', function () {
 
 //closest
 
+//NOTE switch-single-page to Double
+const swicthSingle = document.querySelector('.switch-single-page');
+const swicthDouble = document.querySelector('.switch-double-page');
+const galleryGrid = document.querySelectorAll(
+  '.showcase-container-gallery-grid'
+);
 
-
-
+galleryGrid.forEach(el => {
+  swicthDouble.addEventListener('click', function () {
+    el.classList.add('change-to-double-view');
+  });
+});
+galleryGrid.forEach(el => {
+  swicthSingle.addEventListener('click', function () {
+    el.classList.remove('change-to-double-view');
+  });
+});
