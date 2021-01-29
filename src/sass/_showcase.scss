@@ -9,8 +9,13 @@
   z-index: 200;
 
   overflow-y: scroll;
-  //   white-space: nowrap;
-  //   user-select: none;
+
+  visibility: hidden;
+  opacity: 0;
+
+  // visibility: visible;
+  // opacity: 1;
+
 }
 
 .showcase-container {
@@ -88,6 +93,7 @@
         }
         &-item {
           width: 8rem; // IMPORTANT
+          cursor: pointer;
           span {
             transition: all 0.2s;
           }
@@ -186,7 +192,7 @@
         grid-template-columns: repeat(1, 95%);
         grid-auto-rows: minmax(100%, auto);
       }
-    
+
       gap: 2rem;
       justify-content: center;
       &-item {
@@ -203,27 +209,28 @@
           }
           overflow: hidden;
           width: 100%;
-          // height: 100%;
-          //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.242);
           position: relative;
           .size-slider {
+            background: rgba(255, 255, 255, 0.95);
             visibility: hidden;
             opacity: 0;
-          
+
             // visibility: visible;
             // opacity: 1;
-
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
             height: 8rem;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.673);
-
             display: flex;
             flex-direction: column;
             justify-content: center;
+            cursor: pointer;
+            transition: .5s cubic-bezier(0.65, -0.13, 0.25, 1) all;
+            box-sizing: border-box;
+            transform: translate(0, 100%);
+
             .text-size-uk {
               font-family: 'Times LT W01 Roman', 'Times New Roman', Times, serif;
               font-size: 12px;
@@ -232,14 +239,12 @@
               border-bottom: 1px solid rgba(0, 0, 0, 0);
               color: #636363;
               cursor: pointer;
-              transition: all .2s;
-              &:hover{
+              transition: all 0.2s;
+              &:hover {
                 border-bottom: 1px solid #000;
               }
-           
-             
             }
-            .active{
+            .active {
               color: #000;
             }
             &-title {
@@ -249,16 +254,14 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              .text-bag{
+              .text-bag {
                 font-family: inherit;
                 font-size: 12px;
                 line-height: 1.33;
                 letter-spacing: 0.6px;
                 border-bottom: 1px solid rgba(0, 0, 0, 0);
                 color: #000;
-
               }
-           
             }
             &-num {
               flex: 0 0 50%;
@@ -269,6 +272,12 @@
               justify-content: center;
               align-items: center;
               gap: 3rem;
+              @media screen and (max-width: 1500px) {
+                gap: 2rem;
+              }
+              @media screen and (max-width: 1150px) {
+                gap: 1rem;
+              }
             }
           }
           .round-display {
@@ -317,30 +326,30 @@
           padding-top: 2rem;
           width: 100%;
           height: 100%;
-          .btn-hidden{
+          .btn-hidden {
             @media screen and (min-width: 1020px) {
               display: none;
             }
             border-radius: none;
-            padding: .2rem 0;
+            padding: 0.2rem 0;
             background-color: rgba(255, 0, 0, 0);
             border: none;
             font-size: 1rem;
             font-weight: 600;
-            margin-top: 1rem ;
+            margin-top: 1rem;
             // border-bottom: 1px solid #44444400;
-            transition: all .2s;
-            &:hover{
+            transition: all 0.2s;
+            &:hover {
               border-bottom: 1px solid #444444;
             }
           }
-          .whishlist-icon{
+          .whishlist-icon {
             display: flex;
             width: 100%;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            .con-page{
+            .con-page {
               fill: #444444;
             }
           }
@@ -364,15 +373,13 @@
   }
 }
 
-
-
 //NOTE Typegraphy ///////////
 .text-with-background {
   color: white;
   display: inline;
   padding: 0rem 0rem;
   color: #fff;
-  background:#000000;
+  background: #000000;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.2;
@@ -404,6 +411,12 @@
 // <source srcset="//images.allsaints.com/products/600/WO025T/5/WO025T-5-1.jpg" media="(min-width: 320px)">
 // <img src="//images.allsaints.com/products/600/WO025T/5/WO025T-5-1.jpg" alt="Nora Tie Dye Jacket" aria-describedby="price-5057055827248">
 // </picture>
+
+.open-slider {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
 
 .clothing-img {
   width: 100%;
@@ -446,6 +459,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 1000;
+
     .options-box {
       height: 100%;
       min-width: 25rem;
@@ -458,6 +472,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 
     &-left,
     &-right {
@@ -583,7 +598,19 @@
       0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
       0 100px 80px rgba(0, 0, 0, 0.07);
 */
-
+.one-color {
+  width: 100;
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .thinny-square {
+    width: 2rem;
+    height: 1.5rem;
+    background-color: lawngreen;
+  }
+}
 .icon-page {
   width: 2rem;
   height: 2rem;

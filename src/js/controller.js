@@ -88,6 +88,12 @@ btnReset.addEventListener('click', function () {
 //NOTE switch-single-page to Double
 const swicthSingle = document.querySelector('.switch-single-page');
 const swicthDouble = document.querySelector('.switch-double-page');
+const colorDisplay = document.querySelector('.colorDisplay');
+
+const gridImage = document.querySelectorAll(
+  '.showcase-container-gallery-grid-item'
+);
+let sizeSlider = document.querySelector('.size-slider');
 const galleryGrid = document.querySelectorAll(
   '.showcase-container-gallery-grid'
 );
@@ -102,3 +108,100 @@ galleryGrid.forEach(el => {
     el.classList.remove('change-to-double-view');
   });
 });
+
+//NOTE Hover on mouse enter
+
+gridImage.forEach(el => {
+  el.addEventListener('mouseenter', addSlider);
+});
+gridImage.forEach(el => {
+  el.addEventListener('mouseleave', removeSlider);
+});
+
+function addSlider(e) {
+  console.log('IN');
+  if (e.target === e.currentTarget) {
+    // sizeSlider.forEach(e => {
+    // sizeSlider = e.target
+    sizeSlider.style.visibility = 'visible';
+    sizeSlider.style.opacity = '1';
+    sizeSlider.style.transform = 'translate(0,0)';
+
+    // })
+  }
+  e.stopPropagation();
+}
+
+function removeSlider() {
+  
+  sizeSlider.style.visibility = 'hidden';
+  sizeSlider.style.opacity = '0';
+  sizeSlider.style.transform = 'translate(0,100%)';
+  // console.log('OUT NOW');
+}
+
+// const theTarget = gridImage;
+// console.log(theTarget.length);
+
+// gridImage.forEach( el => {
+
+// el.addEventListener('mouseenter', function (){
+//   sizeSlider.style.visibility = 'visible';
+//   sizeSlider.style.opacity = '1';
+//   console.log('in');
+// })
+// })
+// gridImage.forEach( el => {
+
+// el.addEventListener('mouseleave', function (){
+//   sizeSlider.style.visibility = 'none';
+//   sizeSlider.style.opacity = '0';
+//   console.log('leave');
+// })
+// })
+
+// gridImage.forEach(el => {
+//   console.log(el);
+//   el.addEventListener('mouseenter', function (_, i){
+//     sizeSlider.style.visibility = 'visible';
+//     sizeSlider.style.opacity = '1';
+//     console.log('siuhds');
+
+//   })
+// el.addEventListener('mouseenter', function (e) {
+//   if (!theTarget.length > 1) return;
+//   sizeSlider.forEach(e => {
+//     e.style.visibility = 'visible';
+//     e.style.opacity = '1';
+//   });
+// });
+// });
+
+// gridImage.forEach(el => {
+//   colorDisplay.innerHTML = ` <p class="text-thinny">1 COLOUR</p>`;
+//   el.addEventListener('mouseleave', function () {
+//     sizeSlider.forEach(e => {
+//       e.style.visibility = '';
+//       e.style.opacity = '';
+//     });
+//   });
+// });
+
+// colorDisplay.addEventListener('mouseenter', function (e) { //BUG
+//   e.target.style.display = 'none';
+//   if(!e.target.style.display === '') return
+//   e.target.insertAdjacentHTML(
+//     'afterend',
+//     `<p class="one-color">
+//       <span class="thinny-square">
+//         <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
+//       </span>
+//       <span class="text-thinny" >RED</span>
+//     </p>`
+//   );
+// });
+
+// colorDisplay.addEventListener('mouseleave', function (e) {
+
+//   e.target.style.display = 'inline';
+// });
