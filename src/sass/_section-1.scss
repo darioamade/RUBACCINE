@@ -5,12 +5,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  border: 8px solid red;
 
   visibility: hidden;
   opacity: 0;
 
-  // visibility: visible;
-  // opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .section-1-content-1 {

@@ -22,1184 +22,636 @@
 
   <body>
     <div class="container">
-      <!-- Showcase page 2 -->
-      <div class="showcase-loads">
-        <div class="showcase-loads-container">
-          <div class="showcase-loads-container-gallery">
+
+
+      <!-- SignInAccount -->
+      <!--   😃  OVERLAY + SIGN IN 😃 Remove visibility to see
+       -->
+       <div class="overlayer-2"></div> <!-- //TODO  -->
+       <div class="signin-account">  <!--😃 Remove visibility to see //TODO  -->
+         <div class="signin-account-container">
+           <div class="signin-account-container-left">
+             <p class="text-main">Sign In</p>
+             <div class="form-email">
+               <input
+                 type="text"
+                 class="search__field"
+                 placeholder="Enter your email address"
+               />
+               <input
+                 type="text"
+                 class="search__field"
+                 placeholder="Enter Password"
+               />
+             </div>
+             <p class="text-normal">Forgotten your password?</p>
+             <div class="create">
+               <p class="text-normal">LOGIN</p>
+             </div>
+             <p class="text-main">Amazon Login</p>
+             <div class="amazon-svg">
+               <img src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gry_156x132.png" alt="amazon btn" class="amazon-login-btn">
+               <img src="/src/img/Amazon_Prime_Logo.svg" alt="prime-svg"  class="prime-svg">
+ 
+             </div>
+            
+            
+           </div>
+           <div class="signin-account-container-right">
+             <svg class="icon-close-signin">
+               <use href="src/img/sprite.svg#icon-close"></use>
+             </svg>
+             <p class="text-main">New Customer</p>
+             <p class="text-normal">
+               Customers who have checked out as a guest will receive their
+               tracking number in the order dispatch confirmation.
+             </p>
+             <p class="text-normal">Sign up to:</p>
+             <div class="checks">
+               <p class="text-normal">- Check out faster</p>
+               <p class="text-normal">- View your orders</p>
+               <p class="text-normal">- Edit account details</p>
+             </div>
+             <div class="create">
+               <p class="text-normal">CREATE ACCOUNT</p>
+               <p class="text-normal">CHECKOUT AS GUEST</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!--  -->
+
+     <!--  Whishlist  😃 Remove visibility to see --> 
+     <div class="whishlist  ">  <!-- //BUG  does show   half -->
+      <!-- <hr class="hr3" />  -->
+      <div class="whishlist-container">
+        <div class="whishlist-container-title">
+          <div class="whishlist-container-title-content">
+            <p class="text-main">MY WISHLIST</p>
+            <p class="text-error errorMsgWhishlist">Your wishlist will be lost at the end of your browsing session. Please sign in or register in order to save your wishlist.</p>
 
           </div>
-          <div class="showcase-loads-container-alsoLike">
+          <!--  WILL COME BACK LATER 😃 -->
+          <div class="whishlist-container-title-grid">
+            <div class="whishlist-img">
+              <div class="whishlist-img-stock">
+                <p>IN STOCK</p>
             
-          </div>
-          <div class="showcase-loads-container-viewed">
-            
-          </div>
-          <div class="showcase-loads-container-footer">
-             <div class="section-1-content-2">
-          <div class="section-1-content-2-left">
-            <p class="text-main">
-              New to Rubaccine? Sign up for 15% off full-price styles in your
-              first order.
-            </p>
-          </div>
-          <div class="section-1-content-2-right">
-            <p class="text-thiny hidden">
-              Sign up to receive exclusive updates on our new collections and
-              special offers. To improve your experience we may; profile,
-              segment, test, analyse and model your details. You can unsubscribe
-              at any time via the link in your emails. Please refer to our
-              <strong>Privacy Policy</strong> for further details.
-            </p>
-            <div class="email-parent">
-              <input
-                class="footer-newsletter-form__input"
-                id="footer-newsletter-email1"
-                type="text"
-                value=""
-                name="email"
-                aria-describedby="footer-disclaimer"
-                placeholder="Email Address"
-                aria-label="Enter email address"
-                data-mailcheck="Did you mean"
-                data-prev-value=""
-              />
-              <div class="parent-bottom">
-                <a href="#" class="input-email-parent">WOMENWEAR</a>
-                <a href="#" class="input-email-parent">MANWEAR</a>
+                <div class="whishlist-img-stock-close">
+                   <svg class="icon-close icon-close__menu">
+                    <use href="src/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </div> 
               </div>
+              <div class="whishlist-img-content">
+                <div class="whishlist-img-content-image">
+                  <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+
+                </div>
+                <div class="whishlist-img-content-size">
+                  <p class="text-clothes-description">Coni Shimmer Tank </p>
+                  <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                  <p class="text-clothes-description">  £24.00</p>
+                  <div class="whishlist-img-content-size-color-list">
+                    <div class="whishlist-img-content-size-color-list-twoSquares">
+                      <div class="wishlist-product-list" style="border: none;">
+                        <ul class="squares">
+                          <li class="square">
+                            <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="wishlist-product-list">
+                        <span class="text-list same-size">XS</span>
+                      </div>
+                  </div>
+                    <p class="text-list">SELECT SIZE</p>
+                    
+                    <p class="text-list-u ">EDIT DETAILS</p>
+                  </div>
+                </div>
+                    </div>
+                    <div class="whishlist-img-btn">
+                      <div class="whishlist-img-content-size-clothes-form">
+                        <div class="select-box">
+                          <div class="options-container  ">
+                            <div class="option">
+                              <input type="radio" class="radio" id="clothersSize" name="category" >
+                              <label for="clothersSize">XS</label>
+                            </div>
+                            <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">S</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">M</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">L</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">LX</label>
+                           </div>
+                          </div>
+                          <div class="selected">
+                           -
+                         </div>
+                        </div>
+ 
+                       </div>
+                      <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                      <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                    </div>
             </div>
-            <div class="thinyAlert hidden">
-              <p class="errorEmailRegisted">
-                WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
-              </p>
+            <div class="whishlist-img">
+              <div class="whishlist-img-stock">
+                <p>IN STOCK</p>
+            
+                <div class="whishlist-img-stock-close">
+                   <svg class="icon-close icon-close__menu">
+                    <use href="src/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </div> 
+              </div>
+              <div class="whishlist-img-content">
+                <div class="whishlist-img-content-image">
+                  <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+
+                </div>
+                <div class="whishlist-img-content-size">
+                  <p class="text-clothes-description">Coni Shimmer Tank </p>
+                  <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                  <p class="text-clothes-description">  £24.00</p>
+                  <div class="whishlist-img-content-size-color-list">
+                    <div class="whishlist-img-content-size-color-list-twoSquares">
+                      <div class="wishlist-product-list" style="border: none;">
+                        <ul class="squares">
+                          <li class="square">
+                            <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="wishlist-product-list">
+                        <span class="text-list same-size">XS</span>
+                      </div>
+                  </div>
+                    <p class="text-list">SELECT SIZE</p>
+                    
+                    <p class="text-list-u">EDIT DETAILS</p>
+                  </div>
+                </div>
+                    </div>
+                    <div class="whishlist-img-btn">
+                      <div class="whishlist-img-content-size-clothes-form">
+                        <div class="select-box">
+                          <div class="options-container  ">
+                            <div class="option">
+                              <input type="radio" class="radio" id="clothersSize" name="category" >
+                              <label for="clothersSize">XS</label>
+                            </div>
+                            <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">S</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">M</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">L</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">LX</label>
+                           </div>
+                          </div>
+                          <div class="selected">
+                           -
+                         </div>
+                        </div>
+ 
+                       </div>
+                      <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                      <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                    </div>
             </div>
+            <div class="whishlist-img">
+              <div class="whishlist-img-stock">
+                <p>IN STOCK</p>
+            
+                <div class="whishlist-img-stock-close">
+                   <svg class="icon-close icon-close__menu">
+                    <use href="src/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </div> 
+              </div>
+              <div class="whishlist-img-content">
+                <div class="whishlist-img-content-image">
+                  <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+
+                </div>
+                <div class="whishlist-img-content-size">
+                  <p class="text-clothes-description">Coni Shimmer Tank </p>
+                  <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                  <p class="text-clothes-description">  £24.00</p>
+                  <div class="whishlist-img-content-size-color-list">
+                    <div class="whishlist-img-content-size-color-list-twoSquares">
+                      <div class="wishlist-product-list" style="border: none;">
+                        <ul class="squares">
+                          <li class="square">
+                            <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="wishlist-product-list">
+                        <span class="text-list same-size">XS</span>
+                      </div>
+                  </div>
+                    <p class="text-list">SELECT SIZE</p>
+                    
+                    <p class="text-list-u">EDIT DETAILS</p>
+                  </div>
+                </div>
+                    </div>
+                    <div class="whishlist-img-btn">
+                      <div class="whishlist-img-content-size-clothes-form">
+                        <div class="select-box">
+                          <div class="options-container  ">
+                            <div class="option">
+                              <input type="radio" class="radio" id="clothersSize" name="category" >
+                              <label for="clothersSize">XS</label>
+                            </div>
+                            <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">S</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">M</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">L</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">LX</label>
+                           </div>
+                          </div>
+                          <div class="selected">
+                           -
+                         </div>
+                        </div>
+ 
+                       </div>
+                      <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                      <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                    </div>
+            </div>
+            <div class="whishlist-img">
+              <div class="whishlist-img-stock">
+                <p>IN STOCK</p>
+            
+                <div class="whishlist-img-stock-close">
+                   <svg class="icon-close icon-close__menu">
+                    <use href="src/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </div> 
+              </div>
+              <div class="whishlist-img-content">
+                <div class="whishlist-img-content-image">
+                  <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+
+                </div>
+                <div class="whishlist-img-content-size">
+                  <p class="text-clothes-description">Coni Shimmer Tank </p>
+                  <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                  <p class="text-clothes-description">  £24.00</p>
+                  <div class="whishlist-img-content-size-color-list">
+                    <div class="whishlist-img-content-size-color-list-twoSquares">
+                      <div class="wishlist-product-list" style="border: none;">
+                        <ul class="squares">
+                          <li class="square">
+                            <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="wishlist-product-list">
+                        <span class="text-list same-size">XS</span>
+                      </div>
+                  </div>
+                    <p class="text-list">SELECT SIZE</p>
+                    
+                    <p class="text-list-u">EDIT DETAILS</p>
+                  </div>
+                </div>
+                    </div>
+                    <div class="whishlist-img-btn">
+                      <div class="whishlist-img-content-size-clothes-form">
+                        <div class="select-box">
+                          <div class="options-container  ">
+                            <div class="option">
+                              <input type="radio" class="radio" id="clothersSize" name="category" >
+                              <label for="clothersSize">XS</label>
+                            </div>
+                            <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">S</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">M</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">L</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">LX</label>
+                           </div>
+                          </div>
+                          <div class="selected">
+                           -
+                         </div>
+                        </div>
+ 
+                       </div>
+                      <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                      <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                    </div>
+            </div>
+            <div class="whishlist-img">
+              <div class="whishlist-img-stock">
+                <p>IN STOCK</p>
+            
+                <div class="whishlist-img-stock-close">
+                   <svg class="icon-close icon-close__menu">
+                    <use href="src/img/sprite.svg#icon-close"></use>
+                  </svg>
+                </div> 
+              </div>
+              <div class="whishlist-img-content">
+                <div class="whishlist-img-content-image">
+                  <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+
+                </div>
+                <div class="whishlist-img-content-size">
+                  <p class="text-clothes-description">Coni Shimmer Tank </p>
+                  <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                  <p class="text-clothes-description">  £24.00</p>
+                  <div class="whishlist-img-content-size-color-list">
+                    <div class="whishlist-img-content-size-color-list-twoSquares">
+                      <div class="wishlist-product-list" style="border: none;">
+                        <ul class="squares">
+                          <li class="square">
+                            <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="wishlist-product-list">
+                        <span class="text-list same-size">XS</span>
+                      </div>
+                  </div>
+                    <p class="text-list">SELECT SIZE</p>
+                    
+                    <p class="text-list-u ">EDIT DETAILS</p>
+                  </div>
+                </div>
+                    </div>
+                    <div class="whishlist-img-btn">
+                      <div class="whishlist-img-content-size-clothes-form">
+                        <div class="select-box">
+                          <div class="options-container  ">
+                            <div class="option">
+                              <input type="radio" class="radio" id="clothersSize" name="category" >
+                              <label for="clothersSize">XS</label>
+                            </div>
+                            <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">S</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">M</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">L</label>
+                           </div>
+                           <div class="option">
+                             <input type="radio" class="radio" id="clothersSize" name="category" >
+                             <label for="clothersSize">LX</label>
+                           </div>
+                          </div>
+                          <div class="selected">
+                           -
+                         </div>
+                        </div>
+ 
+                       </div>
+                      <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                      <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                    </div>
+            </div>
+          
+            </div>
+          </div>
+          <div class="whishlist-container-title-btn-black">
+            <button class="btn-add">ADD ALL TO BAG</button>
           </div>
         </div>
-        <hr class="hr1" />
-        <div class="footer">
-          <div class="footer-info">
-            <div class="footer-info-container">
-              <div class="footer-info-container-left">
-                <div class="footer-info-container-left-info1">
-                  <ul class="nav__list-footer">
-                    <li class="nav__item-footer-a">
-                      <a href="#">INFORMATION</a>
-                    </li>
-                    <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
-                    <svg class="icon-footer icon-hidden">
-                      <use
-                        href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                        id="dario"
-                      ></use>
-                    </svg>
-                  </ul>
+        <div class="whishlist-container-info">
+
+             <hr class="hr" /> 
+            <div class="subscribe-form">
+              <div class="subscribe-form-left">
+                <p >
+                  New to Rubaccine? Sign up for 15% off full-price styles in your
+                  first order.
+                </p>
+              </div>
+              <div class="subscribe-form-right">
+                <p class="text-thiny hidden">
+                  Sign up to receive exclusive updates on our new collections and
+                  special offers. To improve your experience we may; profile,
+                  segment, test, analyse and model your details. You can unsubscribe
+                  at any time via the link in your emails. Please refer to our
+                  <strong>Privacy Policy</strong> for further details.
+                </p>
+                <div class="email-parent">
+                  <input
+                    class="footer-newsletter-form__input"
+                    id="footer-newsletter-email"
+                    type="text"
+                    value=""
+                    name="email"
+                    aria-describedby="footer-disclaimer"
+                    placeholder="Email Address"
+                    aria-label="Enter email address"
+                    data-mailcheck="Did you mean"
+                    data-prev-value=""
+                  />
+                  <div class="parent-bottom">
+                    <a href="#" class="input-email-parent">WOMENWEAR</a>
+                    <a href="#" class="input-email-parent">MANWEAR</a>
+                  </div>
                 </div>
-                <hr class="hr2" />
-                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                <div class="footer-info-container-left-info2">
-                  <ul class="nav__list-footer-2 operations__tab--active">
-                    <li class="nav__item-footer"><a href="#">Contact Us</a></li>
-                    <li class="nav__item-footer"><a href="#">Delivery</a></li>
-                    <li class="nav__item-footer">
-                      <a href="#">Returns & Exchange</a>
-                    </li>
-                    <li class="nav__item-footer"><a href="#">FAQs</a></li>
-                    <li class="nav__item-footer"><a href="#">Size Guide</a></li>
-                    <li class="nav__item-footer"><a href="#">Careers</a></li>
-                    <li class="nav__item-footer"><a href="#">Stores</a></li>
-                    <li class="nav__item-footer">
-                      <a href="#">Sustainability</a>
-                    </li>
-                  </ul>
+                <div class="thinyAlert hidden ">
+                  <p class="errorEmailRegisted">
+                    WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
+                  </p>
+                </div>
+              </div> 
+                
+
+            </div>
+            </div>
+            <hr class="hr1" />
+            <div class="footer">
+              <div class="footer-info">
+                <div class="footer-info-container">
+                  <div class="footer-info-container-left">
+                    <div class="footer-info-container-left-info1">
+                      <ul class="nav__list-footer">
+                        <li class="nav__item-footer-a">
+                          <a href="#">INFORMATION</a>
+                        </li>
+                        <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
+                        <svg class="icon-footer icon-hidden">
+                          <use
+                            href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                            id="dario"
+                          ></use>
+                        </svg>
+                      </ul>
+                    </div>
+                    <hr class="hr2" />
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2">
+                      <ul class="nav__list-footer-2 operations__tab--active">
+                        <li class="nav__item-footer"><a href="#">Contact Us</a></li>
+                        <li class="nav__item-footer"><a href="#">Delivery</a></li>
+                        <li class="nav__item-footer">
+                          <a href="#">Returns & Exchange</a>
+                        </li>
+                        <li class="nav__item-footer"><a href="#">FAQs</a></li>
+                        <li class="nav__item-footer"><a href="#">Size Guide</a></li>
+                        <li class="nav__item-footer"><a href="#">Careers</a></li>
+                        <li class="nav__item-footer"><a href="#">Stores</a></li>
+                        <li class="nav__item-footer">
+                          <a href="#">Sustainability</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="footer-info-container-right">
+                    <div class="footer-info-container-left-info1">
+                      <ul class="nav__list-footer previeweEl">
+                        <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
+                      </ul>
+                    </div>
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2">
+                      <ul class="nav__list-footer-2">
+                        <li class="nav__item-footer">
+                          <a href="#">Accesssibility</a>
+                        </li>
+                        <li class="nav__item-footer"><a href="#">Klarna</a></li>
+                        <li class="nav__item-footer">
+                          <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="nav__item-footer">
+                          <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav__item-footer">
+                          <a href="#">Tax Strategy</a>
+                        </li>
+                        <li class="nav__item-footer">
+                          <a href="#">Modern Slavery Act</a>
+                        </li>
+                        <li class="nav__item-footer">
+                          <a href="#">Gender Pay Gap</a>
+                        </li>
+                        <li class="nav__item-footer"><a href="#">Site Map</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!--  -->
-              <div class="footer-info-container-right">
-                <div class="footer-info-container-left-info1">
-                  <ul class="nav__list-footer previeweEl">
-                    <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
-                  </ul>
-                </div>
-                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                <div class="footer-info-container-left-info2">
-                  <ul class="nav__list-footer-2">
-                    <li class="nav__item-footer">
-                      <a href="#">Accesssibility</a>
-                    </li>
-                    <li class="nav__item-footer"><a href="#">Klarna</a></li>
-                    <li class="nav__item-footer">
-                      <a href="#">Terms & Conditions</a>
-                    </li>
-                    <li class="nav__item-footer">
-                      <a href="#">Privacy Policy</a>
-                    </li>
-                    <li class="nav__item-footer">
-                      <a href="#">Tax Strategy</a>
-                    </li>
-                    <li class="nav__item-footer">
-                      <a href="#">Modern Slavery Act</a>
-                    </li>
-                    <li class="nav__item-footer">
-                      <a href="#">Gender Pay Gap</a>
-                    </li>
-                    <li class="nav__item-footer"><a href="#">Site Map</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <!-- <hr class="hr2"> -->
-          <div class="footer-icon">
-            <div class="footer-icon-container">
-              <div class="footer-icon-container-left">
-                <div class="footer-info-container-left-info1">
-                  <ul class="nav__list-footer">
-                    <li class="nav__item-footer-a">
-                      <a href="#">DOWNLOAD OUR APP</a>
-                    </li>
-                    <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
-                    <svg class="icon-footer icon-hidden">
-                      <use
-                        href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                      ></use>
-                    </svg>
-                  </ul>
-                </div>
-                <hr class="hr2" />
-                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                <div class="footer-info-container-left-info2">
-                  <img
-                    src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
-                    alt="app store"
-                    class="appStore"
-                  />
-                </div>
-              </div>
               <!-- <hr class="hr2"> -->
-              <!-- <div class="footer-icon-container-right">
-
-              </div> -->
-              <div class="footer-info-container-right">
-                <div class="footer-info-container-left-info1">
-                  <ul class="nav__list-footer">
-                    <li class="nav__item-footer-a">
-                      <a href="#">FOLLOW US</a>
-                    </li>
-                    <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
-                    <svg class="icon-footer icon-hidden">
-                      <use
-                        href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                      ></use>
-                    </svg>
-                  </ul>
-                </div>
-                <hr class="hr2" />
-                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                <div class="footer-info-container-left-info2">
-                  <ul class="nav__list-footer-2">
-                    <li class="nav__item-footer"><a href="#">Instagram</a></li>
-                    <li class="nav__item-footer"><a href="#">Facebook</a></li>
-                    <li class="nav__item-footer"><a href="#">Twitter</a></li>
-                    <li class="nav__item-footer"><a href="#">Youtube</a></li>
-                    <li class="nav__item-footer"><a href="#">Pinterest</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="hr3" />
-        <div class="copyright">
-          <p>Copyright&copy;Dario Amade 2021</p>
-        </div>
-            
-          </div>
-
-        </div>
-
-      </div>
-      <!--  -->
-      <!-- Showcase -->
-          <!--   😃 Remove visibility to see -->
-      <div class="showcase">
-        <div class="showcase-container">
-          <div class="showcase-container-title">
-            <p class="text-main">Women's All Sale</p>
-            <p class="text-list">Shop our women's Sale. 
-              Leather jackets. Dresses. Handbags. And more. Free 
-              delivery on all UK orders over £150 & free UK returns.
-            </p>
-            <div class="showcase-container-title-category">
-              <ul class="nav__list-preview">
-                <li class="nav__item-preview " ><a href="#" style="color: black;" class="removeUnderline">Dresses</a></li>
-                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">Leather </a></li>
-                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">T-shirts & Sweatshirts</a></li>
-                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">Knitwear</a></li>
-                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">Accessories</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr class="hr5"/>
-          <div class="showcase-container-filter ">
-            <!--  Remove visibility 😆  category stil 4 to go-->
-            <div class="category-page-filter-list">
-              <div class="category-page-filter-list-selectors">
-                  <div class="options-box ">
-                      <div class="option">
-                      <input type="checkbox" id="clothersSize">
-                      <label for="clothersSize" class="text-radio">Coats & Jackets</label>
-                      </div>
-                      <div class="option">
-                       <input type="checkbox" class="radio" id="Leather Jackets" name="category" >
-                       <label for="Leather Jackets" class="text-radio">Leather Jackets</label>
-                     </div>
-                     <div class="option">
-                       <input type="checkbox" class="radio" id="Clothing" name="category" >
-                       <label for="Clothing" class="text-radio">Clothing</label>
-                     </div>
-                     <div class="option">
-                       <input type="checkbox" class="radio" id="Knitwear" name="category" >
-                       <label for="Knitwear" class="text-radio">Knitwear</label>
-                     </div>
-                     <div class="option">
-                       <input type="checkbox" class="radio" id="Trousers & Leggings" name="category" >
-                       <label for="Trousers & Leggings" class="text-radio">Trousers & Leggings</label>
-                     </div> 
-                     <div class="option">
-                      <input type="checkbox" class="radio" id="Handbags" name="category" >
-                      <label for="Handbags" class="text-radio">Handbags</label>
-                    </div> 
-                    <div class="option">
-                      <input type="checkbox" class="radio" id="Playsuits & Jumpsuits" name="category" >
-                      <label for="Playsuits & Jumpsuits" class="text-radio">Playsuits & Jumpsuits</label>
-                    </div> 
-                    <div class="option">
-                      <input type="checkbox" class="radio" id="Tops & Shirts" name="category" >
-                      <label for="Tops & Shirts" class="text-radio">Tops & Shirts</label>
-                    </div> 
-                  </div> 
-                  <div class="options-content ">
-                    <div class="option">
-                       <input type="checkbox" class="radio" id="Dresses" name="category" >
-                       <label for="Dresses" class="text-radio">Dresses</label>
-                     </div>
-                     <div class="option">
-                      <input type="checkbox" class="radio" id="Shirts" name="category" >
-                      <label for="Shirts" class="text-radio">Shirts</label>
+              <div class="footer-icon">
+                <div class="footer-icon-container">
+                  <div class="footer-icon-container-left">
+                    <div class="footer-info-container-left-info1">
+                      <ul class="nav__list-footer">
+                        <li class="nav__item-footer-a">
+                          <a href="#">DOWNLOAD OUR APP</a>
+                        </li>
+                        <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                        <svg class="icon-footer icon-hidden">
+                          <use
+                            href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                          ></use>
+                        </svg>
+                      </ul>
                     </div>
-                    <div class="option">
-                      <input type="checkbox" class="radio" id="Accessories" name="category" >
-                      <label for="Accessories" class="text-radio">Accessories</label>
+                    <hr class="hr2" />
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2">
+                      <img
+                        src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
+                        alt="app store"
+                        class="appStore"
+                      />
                     </div>
-                    <div class="option">
-                      <input type="checkbox" class="radio" id="Wallets" name="category" >
-                      <label for="Wallets" class="text-radio">Wallets</label>
-                    </div>
-                    <div class="option">
-                      <input type="checkbox" class="radio" id="Cardholders" name="category" >
-                      <label for="Cardholders" class="text-radio">Cardholders</label>
-                    </div> 
-                    <div class="option">
-                     <input type="checkbox" class="radio" id="Skirts & Shorts" name="category" >
-                     <label for="Skirts & Shorts" class="text-radio">Skirts & Shorts</label>
-                   </div> 
-                 
-                 </div>  
-
-              </div>
-              <hr class="hr5" />
-              <div class="category-page-filter-list-clear">
-                <div class="category-page-filter-list-clear-left">
-                  <span class="text-filter " >CLEAR ALL</span>
-                </div>
-                <p class="vl2"></p>
-                <div class="category-page-filter-list-clear-right">
-                  <span class="text-filter ">CLOSE</span>
-                </div>
-              </div>
-              <hr class="hr7" />
-            </div>
-
-            <div class="showcase-container-filter-filters">
-              <div class="showcase-container-filter-filters-category">
-                <div class="showcase-container-filter-filters-category-item">
-                  <span class="text-filter " style="border-bottom: none;">FILTERS:</span>
-                </div>
-                <div class="showcase-container-filter-filters-category-item invisble">
-                  <div class="selected-sort">
-                    <span class="text-filter ">category</span>
                   </div>
-                </div>
-                <div class="showcase-container-filter-filters-category-item invisble">
-                  <div class="selected-sort">
-                    <span class="text-filter ">Colour</span>
-                  </div>
-                </div>
-                <div class="showcase-container-filter-filters-category-item invisble">
-                  <div class="selected-sort">
-                    <span class="text-filter ">Size </span>
-                  </div>
-                </div>
-             
-                <div class="showcase-container-filter-filters-category-item invisble" style="width: 12rem;">
-                  <div class="selected-sort">
-                    <span class="text-filter " >Price Range</span>
-                  </div>
-                </div>
-
-              </div>
-              <p class="vl2"></p>
-              <div class="showcase-container-filter-filters-sort">
-              
-                <div class="showcase-container-filter-filters-category-item">
-                  <span class="text-filter ">SORT BY</p>
-                </div>
-              </div>
-            
-            </div>
-            <hr class="hr6" />
-            <div class="showcase-container-filter-pagination">
-            
-              <div class="showcase-container-filter-pagination-icons">
-                <p class="text-list">VIEW:</p>
-                <svg class="icon-page switch-single-page">
-                  <use href="src/img/sprite.svg#icon-stop2"></use>
-                </svg>
-                <svg class="icon-page switch-double-page">
-                  <use href="src/img/sprite.svg#icon-pause2"></use>
-                </svg>
-
-              </div>
-              <div class="showcase-container-filter-pagination-pages">
-                <button class="btn--pag underline agination__btn--prev">
-                  <span>1</span>
-                </button>
-                <button class="btn--pag pagination__btn--next">
-                  <span>2</span>
-                </button> 
-                <button class="btn--pag pagination__btn--next">
-                  <span>3</span>
-                </button> 
-                <button class="btn--pag pagination__btn--next-all">
-                  <span>VIEW ALL</span>
-                </button> 
-              </div>
-
-            </div>
-
-          </div>
-          <div class="showcase-container-gallery">
-           <div class="showcase-container-gallery-grid ">
-             <div class="showcase-container-gallery-grid-item" >
-               <div class="showcase-container-gallery-grid-item-img">
-                 <div class="size-slider  ">
-                   <div class="size-slider-title" id="one">
-                    <p class="text-bag">In Stock</p>
-                   </div>
-                   <div class="size-slider-num">
-                     <p class="text-size-uk active" >  UK 2</p>
-                     <p class="text-size-uk active">UK 4</p>
-                     <p class="text-size-uk"> UK 6 </p>
-                     <p class="text-size-uk">UK 8 </p>
-                     <p class="text-size-uk"> UK 10</p>
-                     <p class="text-size-uk">UK 12</p>
-                     <p class="text-size-uk active"> UK 14</p>
-                   </div>
-                 </div>
-                 <div class="round-display">
-                   70% OFF
-                 </div>
-                 <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
-
-               </div>
-               <div class="showcase-container-gallery-grid-item-description">
-                 <div class="whishlist-icon">
-                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                  <svg class="icon-page ">
-                    <use href="src/img/sprite.svg#icon-heart"></use>
-                  </svg>
-
-                 </div>
-               
-                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                  <p class="text-thinny colorDisplay">1 COLOUR</p>
-                  <!-- <p class="one-color">
-                    <span class="thinny-square">
-                      <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
-                    </span>
-                    <span class="text-thinny" >RED</span>
-                  </p> -->
-                  <button class="btn-hidden">ADD TO BAG</button>
-               </div>
-
-             </div>
-              <div class="showcase-container-gallery-grid-item" >
-               <div class="showcase-container-gallery-grid-item-img">
-                 <div class="size-slider" id="two">
-                   <div class="size-slider-title">
-                    <p class="text-bag">In Stock</p>
-                   </div>
-              
-                   <div class="size-slider-num">
-                     <p class="text-size-uk active" >  UK 2</p>
-                     <p class="text-size-uk active">UK 4</p>
-                     <p class="text-size-uk"> UK 6 </p>
-                     <p class="text-size-uk">UK 8 </p>
-                     <p class="text-size-uk"> UK 10</p>
-                     <p class="text-size-uk">UK 12</p>
-                     <p class="text-size-uk active"> UK 14</p>
-                  
-                   </div>
-                   
-
-                 </div>
-                 <div class="round-display">
-                   70% OFF
-                 </div>
-                 <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
-
-               </div>
-               <div class="showcase-container-gallery-grid-item-description">
-                 <div class="whishlist-icon">
-                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                  <svg class="icon-page ">
-                    <use href="src/img/sprite.svg#icon-heart"></use>
-                  </svg>
-
-                 </div>
-               
-                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                  <p class="text-thinny">1 COLOUR</p>
-                  <button class="btn-hidden">ADD TO BAG</button>
-               </div>
-
-             </div>
-             <div class="showcase-container-gallery-grid-item" >
-              <div class="showcase-container-gallery-grid-item-img">
-                <div class="size-slider" id="three">
-                  <div class="size-slider-title">
-                   <p class="text-bag">In Stock</p>
-                  </div>
-             
-                  <div class="size-slider-num">
-                    <p class="text-size-uk active" >  UK 2</p>
-                    <p class="text-size-uk active">UK 4</p>
-                    <p class="text-size-uk"> UK 6 </p>
-                    <p class="text-size-uk">UK 8 </p>
-                    <p class="text-size-uk"> UK 10</p>
-                    <p class="text-size-uk">UK 12</p>
-                    <p class="text-size-uk active"> UK 14</p>
-                 
-                  </div>
-                  
-
-                </div>
-                <div class="round-display">
-                  70% OFF
-                </div>
-                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
-
-              </div>
-              <div class="showcase-container-gallery-grid-item-description">
-                <div class="whishlist-icon">
-                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                 <svg class="icon-page ">
-                   <use href="src/img/sprite.svg#icon-heart"></use>
-                 </svg>
-
-                </div>
-              
-                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                 <p class="text-thinny">1 COLOUR</p>
-                 <button class="btn-hidden">ADD TO BAG</button>
-              </div>
-
-            </div>
-            <div class="showcase-container-gallery-grid-item" >
-              <div class="showcase-container-gallery-grid-item-img">
-                <div class="size-slider" id="four">
-                  <div class="size-slider-title">
-                   <p class="text-bag">In Stock</p>
-                  </div>
-             
-                  <div class="size-slider-num">
-                    <p class="text-size-uk active" >  UK 2</p>
-                    <p class="text-size-uk active">UK 4</p>
-                    <p class="text-size-uk"> UK 6 </p>
-                    <p class="text-size-uk">UK 8 </p>
-                    <p class="text-size-uk"> UK 10</p>
-                    <p class="text-size-uk">UK 12</p>
-                    <p class="text-size-uk active"> UK 14</p>
-                 
-                  </div>
-                  
-
-                </div>
-                <div class="round-display">
-                  70% OFF
-                </div>
-                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
-
-              </div>
-              <div class="showcase-container-gallery-grid-item-description">
-                <div class="whishlist-icon">
-                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                 <svg class="icon-page ">
-                   <use href="src/img/sprite.svg#icon-heart"></use>
-                 </svg>
-
-                </div>
-              
-                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                 <p class="text-thinny">1 COLOUR</p>
-                 <button class="btn-hidden">ADD TO BAG</button>
-              </div>
-
-            </div>
-           </div>
-
-          </div>
-        </div>
+                  <!-- <hr class="hr2"> -->
+                  <!-- <div class="footer-icon-container-right">
     
-        </div>
+                  </div> -->
+                  <div class="footer-info-container-right">
+                    <div class="footer-info-container-left-info1">
+                      <ul class="nav__list-footer">
+                        <li class="nav__item-footer-a">
+                          <a href="#">FOLLOW US</a>
+                        </li>
+                        <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                        <svg class="icon-footer icon-hidden">
+                          <use
+                            href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                          ></use>
+                        </svg>
+                      </ul>
+                    </div>
+                    <hr class="hr2" />
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2">
+                      <ul class="nav__list-footer-2">
+                        <li class="nav__item-footer"><a href="#">Instagram</a></li>
+                        <li class="nav__item-footer"><a href="#">Facebook</a></li>
+                        <li class="nav__item-footer"><a href="#">Twitter</a></li>
+                        <li class="nav__item-footer"><a href="#">Youtube</a></li>
+                        <li class="nav__item-footer"><a href="#">Pinterest</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>Copyright&copy;Dario Amade 2021</p>
+            </div>
+          <!-- info end -->
     </div>
-      <!--  -->
-      <!-- SignInAccount -->
-      <!--   😃 Remove visibility to see -->
-      <div class="overlayer-2"></div>
-      <div class="signin-account">
-        <div class="signin-account-container">
-          <div class="signin-account-container-left">
-            <p class="text-main">Sign In</p>
-            <div class="form-email">
-              <input
-                type="text"
-                class="search__field"
-                placeholder="Enter your email address"
-              />
-              <input
-                type="text"
-                class="search__field"
-                placeholder="Enter Password"
-              />
-            </div>
-            <p class="text-normal">Forgotten your password?</p>
-            <div class="create">
-              <p class="text-normal">LOGIN</p>
-            </div>
-            <p class="text-main">Amazon Login</p>
-            <div class="amazon-svg">
-              <img src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gry_156x132.png" alt="amazon btn" class="amazon-login-btn">
-              <img src="/src/img/Amazon_Prime_Logo.svg" alt="prime-svg"  class="prime-svg">
-
-            </div>
-           
-           
-          </div>
-          <div class="signin-account-container-right">
-            <svg class="icon-close-signin">
-              <use href="src/img/sprite.svg#icon-close"></use>
-            </svg>
-            <p class="text-main">New Customer</p>
-            <p class="text-normal">
-              Customers who have checked out as a guest will receive their
-              tracking number in the order dispatch confirmation.
-            </p>
-            <p class="text-normal">Sign up to:</p>
-            <div class="checks">
-              <p class="text-normal">- Check out faster</p>
-              <p class="text-normal">- View your orders</p>
-              <p class="text-normal">- Edit account details</p>
-            </div>
-            <div class="create">
-              <p class="text-normal">CREATE ACCOUNT</p>
-              <p class="text-normal">CHECKOUT AS GUEST</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-
-      <!--  Whishlist  😃 Remove visibility to see --> 
-      <div class="whishlist ">
-        <!-- <hr class="hr3" />  -->
-        <div class="whishlist-container">
-          <div class="whishlist-container-title">
-            <div class="whishlist-container-title-content">
-              <p class="text-main">MY WISHLIST</p>
-              <p class="text-error errorMsgWhishlist">Your wishlist will be lost at the end of your browsing session. Please sign in or register in order to save your wishlist.</p>
-
-            </div>
-            <!--  WILL COME BACK LATER 😃 -->
-            <div class="whishlist-container-title-grid">
-              <div class="whishlist-img">
-                <div class="whishlist-img-stock">
-                  <p>IN STOCK</p>
-              
-                  <div class="whishlist-img-stock-close">
-                     <svg class="icon-close icon-close__menu">
-                      <use href="src/img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </div> 
-                </div>
-                <div class="whishlist-img-content">
-                  <div class="whishlist-img-content-image">
-                    <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
-
-                  </div>
-                  <div class="whishlist-img-content-size">
-                    <p class="text-clothes-description">Coni Shimmer Tank </p>
-                    <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
-                    <p class="text-clothes-description">  £24.00</p>
-                    <div class="whishlist-img-content-size-color-list">
-                      <div class="whishlist-img-content-size-color-list-twoSquares">
-                        <div class="wishlist-product-list" style="border: none;">
-                          <ul class="squares">
-                            <li class="square">
-                              <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="wishlist-product-list">
-                          <span class="text-list same-size">XS</span>
-                        </div>
-                    </div>
-                      <p class="text-list">SELECT SIZE</p>
-                      
-                      <p class="text-list-u ">EDIT DETAILS</p>
-                    </div>
-                  </div>
-                      </div>
-                      <div class="whishlist-img-btn">
-                        <div class="whishlist-img-content-size-clothes-form">
-                          <div class="select-box">
-                            <div class="options-container  ">
-                              <div class="option">
-                                <input type="radio" class="radio" id="clothersSize" name="category" >
-                                <label for="clothersSize">XS</label>
-                              </div>
-                              <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">S</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">M</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">L</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">LX</label>
-                             </div>
-                            </div>
-                            <div class="selected">
-                             -
-                           </div>
-                          </div>
-   
-                         </div>
-                        <p class="text-list-u   size-guide">SIZE GUIDE </p>
-                        <button class="btn-add  btn-not-clear">ADD TO BAG</button>
-                      </div>
-              </div>
-              <div class="whishlist-img">
-                <div class="whishlist-img-stock">
-                  <p>IN STOCK</p>
-              
-                  <div class="whishlist-img-stock-close">
-                     <svg class="icon-close icon-close__menu">
-                      <use href="src/img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </div> 
-                </div>
-                <div class="whishlist-img-content">
-                  <div class="whishlist-img-content-image">
-                    <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
-
-                  </div>
-                  <div class="whishlist-img-content-size">
-                    <p class="text-clothes-description">Coni Shimmer Tank </p>
-                    <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
-                    <p class="text-clothes-description">  £24.00</p>
-                    <div class="whishlist-img-content-size-color-list">
-                      <div class="whishlist-img-content-size-color-list-twoSquares">
-                        <div class="wishlist-product-list" style="border: none;">
-                          <ul class="squares">
-                            <li class="square">
-                              <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="wishlist-product-list">
-                          <span class="text-list same-size">XS</span>
-                        </div>
-                    </div>
-                      <p class="text-list">SELECT SIZE</p>
-                      
-                      <p class="text-list-u">EDIT DETAILS</p>
-                    </div>
-                  </div>
-                      </div>
-                      <div class="whishlist-img-btn">
-                        <div class="whishlist-img-content-size-clothes-form">
-                          <div class="select-box">
-                            <div class="options-container  ">
-                              <div class="option">
-                                <input type="radio" class="radio" id="clothersSize" name="category" >
-                                <label for="clothersSize">XS</label>
-                              </div>
-                              <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">S</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">M</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">L</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">LX</label>
-                             </div>
-                            </div>
-                            <div class="selected">
-                             -
-                           </div>
-                          </div>
-   
-                         </div>
-                        <p class="text-list-u   size-guide">SIZE GUIDE </p>
-                        <button class="btn-add  btn-not-clear">ADD TO BAG</button>
-                      </div>
-              </div>
-              <div class="whishlist-img">
-                <div class="whishlist-img-stock">
-                  <p>IN STOCK</p>
-              
-                  <div class="whishlist-img-stock-close">
-                     <svg class="icon-close icon-close__menu">
-                      <use href="src/img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </div> 
-                </div>
-                <div class="whishlist-img-content">
-                  <div class="whishlist-img-content-image">
-                    <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
-
-                  </div>
-                  <div class="whishlist-img-content-size">
-                    <p class="text-clothes-description">Coni Shimmer Tank </p>
-                    <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
-                    <p class="text-clothes-description">  £24.00</p>
-                    <div class="whishlist-img-content-size-color-list">
-                      <div class="whishlist-img-content-size-color-list-twoSquares">
-                        <div class="wishlist-product-list" style="border: none;">
-                          <ul class="squares">
-                            <li class="square">
-                              <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="wishlist-product-list">
-                          <span class="text-list same-size">XS</span>
-                        </div>
-                    </div>
-                      <p class="text-list">SELECT SIZE</p>
-                      
-                      <p class="text-list-u">EDIT DETAILS</p>
-                    </div>
-                  </div>
-                      </div>
-                      <div class="whishlist-img-btn">
-                        <div class="whishlist-img-content-size-clothes-form">
-                          <div class="select-box">
-                            <div class="options-container  ">
-                              <div class="option">
-                                <input type="radio" class="radio" id="clothersSize" name="category" >
-                                <label for="clothersSize">XS</label>
-                              </div>
-                              <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">S</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">M</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">L</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">LX</label>
-                             </div>
-                            </div>
-                            <div class="selected">
-                             -
-                           </div>
-                          </div>
-   
-                         </div>
-                        <p class="text-list-u   size-guide">SIZE GUIDE </p>
-                        <button class="btn-add  btn-not-clear">ADD TO BAG</button>
-                      </div>
-              </div>
-              <div class="whishlist-img">
-                <div class="whishlist-img-stock">
-                  <p>IN STOCK</p>
-              
-                  <div class="whishlist-img-stock-close">
-                     <svg class="icon-close icon-close__menu">
-                      <use href="src/img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </div> 
-                </div>
-                <div class="whishlist-img-content">
-                  <div class="whishlist-img-content-image">
-                    <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
-
-                  </div>
-                  <div class="whishlist-img-content-size">
-                    <p class="text-clothes-description">Coni Shimmer Tank </p>
-                    <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
-                    <p class="text-clothes-description">  £24.00</p>
-                    <div class="whishlist-img-content-size-color-list">
-                      <div class="whishlist-img-content-size-color-list-twoSquares">
-                        <div class="wishlist-product-list" style="border: none;">
-                          <ul class="squares">
-                            <li class="square">
-                              <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="wishlist-product-list">
-                          <span class="text-list same-size">XS</span>
-                        </div>
-                    </div>
-                      <p class="text-list">SELECT SIZE</p>
-                      
-                      <p class="text-list-u">EDIT DETAILS</p>
-                    </div>
-                  </div>
-                      </div>
-                      <div class="whishlist-img-btn">
-                        <div class="whishlist-img-content-size-clothes-form">
-                          <div class="select-box">
-                            <div class="options-container  ">
-                              <div class="option">
-                                <input type="radio" class="radio" id="clothersSize" name="category" >
-                                <label for="clothersSize">XS</label>
-                              </div>
-                              <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">S</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">M</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">L</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">LX</label>
-                             </div>
-                            </div>
-                            <div class="selected">
-                             -
-                           </div>
-                          </div>
-   
-                         </div>
-                        <p class="text-list-u   size-guide">SIZE GUIDE </p>
-                        <button class="btn-add  btn-not-clear">ADD TO BAG</button>
-                      </div>
-              </div>
-              <div class="whishlist-img">
-                <div class="whishlist-img-stock">
-                  <p>IN STOCK</p>
-              
-                  <div class="whishlist-img-stock-close">
-                     <svg class="icon-close icon-close__menu">
-                      <use href="src/img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </div> 
-                </div>
-                <div class="whishlist-img-content">
-                  <div class="whishlist-img-content-image">
-                    <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
-
-                  </div>
-                  <div class="whishlist-img-content-size">
-                    <p class="text-clothes-description">Coni Shimmer Tank </p>
-                    <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
-                    <p class="text-clothes-description">  £24.00</p>
-                    <div class="whishlist-img-content-size-color-list">
-                      <div class="whishlist-img-content-size-color-list-twoSquares">
-                        <div class="wishlist-product-list" style="border: none;">
-                          <ul class="squares">
-                            <li class="square">
-                              <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="wishlist-product-list">
-                          <span class="text-list same-size">XS</span>
-                        </div>
-                    </div>
-                      <p class="text-list">SELECT SIZE</p>
-                      
-                      <p class="text-list-u ">EDIT DETAILS</p>
-                    </div>
-                  </div>
-                      </div>
-                      <div class="whishlist-img-btn">
-                        <div class="whishlist-img-content-size-clothes-form">
-                          <div class="select-box">
-                            <div class="options-container  ">
-                              <div class="option">
-                                <input type="radio" class="radio" id="clothersSize" name="category" >
-                                <label for="clothersSize">XS</label>
-                              </div>
-                              <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">S</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">M</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">L</label>
-                             </div>
-                             <div class="option">
-                               <input type="radio" class="radio" id="clothersSize" name="category" >
-                               <label for="clothersSize">LX</label>
-                             </div>
-                            </div>
-                            <div class="selected">
-                             -
-                           </div>
-                          </div>
-   
-                         </div>
-                        <p class="text-list-u   size-guide">SIZE GUIDE </p>
-                        <button class="btn-add  btn-not-clear">ADD TO BAG</button>
-                      </div>
-              </div>
-            
-              </div>
-            </div>
-            <div class="whishlist-container-title-btn-black">
-              <button class="btn-add">ADD ALL TO BAG</button>
-            </div>
-          </div>
-          <div class="whishlist-container-info">
-
-               <hr class="hr" /> 
-              <div class="subscribe-form">
-                <div class="subscribe-form-left">
-                  <p >
-                    New to Rubaccine? Sign up for 15% off full-price styles in your
-                    first order.
-                  </p>
-                </div>
-                <div class="subscribe-form-right">
-                  <p class="text-thiny hidden">
-                    Sign up to receive exclusive updates on our new collections and
-                    special offers. To improve your experience we may; profile,
-                    segment, test, analyse and model your details. You can unsubscribe
-                    at any time via the link in your emails. Please refer to our
-                    <strong>Privacy Policy</strong> for further details.
-                  </p>
-                  <div class="email-parent">
-                    <input
-                      class="footer-newsletter-form__input"
-                      id="footer-newsletter-email"
-                      type="text"
-                      value=""
-                      name="email"
-                      aria-describedby="footer-disclaimer"
-                      placeholder="Email Address"
-                      aria-label="Enter email address"
-                      data-mailcheck="Did you mean"
-                      data-prev-value=""
-                    />
-                    <div class="parent-bottom">
-                      <a href="#" class="input-email-parent">WOMENWEAR</a>
-                      <a href="#" class="input-email-parent">MANWEAR</a>
-                    </div>
-                  </div>
-                  <div class="thinyAlert hidden ">
-                    <p class="errorEmailRegisted">
-                      WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
-                    </p>
-                  </div>
-                </div> 
-                  
-
-              </div>
-              </div>
-              <hr class="hr1" />
-              <div class="footer">
-                <div class="footer-info">
-                  <div class="footer-info-container">
-                    <div class="footer-info-container-left">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer">
-                          <li class="nav__item-footer-a">
-                            <a href="#">INFORMATION</a>
-                          </li>
-                          <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
-                          <svg class="icon-footer icon-hidden">
-                            <use
-                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                              id="dario"
-                            ></use>
-                          </svg>
-                        </ul>
-                      </div>
-                      <hr class="hr2" />
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <ul class="nav__list-footer-2 operations__tab--active">
-                          <li class="nav__item-footer"><a href="#">Contact Us</a></li>
-                          <li class="nav__item-footer"><a href="#">Delivery</a></li>
-                          <li class="nav__item-footer">
-                            <a href="#">Returns & Exchange</a>
-                          </li>
-                          <li class="nav__item-footer"><a href="#">FAQs</a></li>
-                          <li class="nav__item-footer"><a href="#">Size Guide</a></li>
-                          <li class="nav__item-footer"><a href="#">Careers</a></li>
-                          <li class="nav__item-footer"><a href="#">Stores</a></li>
-                          <li class="nav__item-footer">
-                            <a href="#">Sustainability</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="footer-info-container-right">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer previeweEl">
-                          <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
-                        </ul>
-                      </div>
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <ul class="nav__list-footer-2">
-                          <li class="nav__item-footer">
-                            <a href="#">Accesssibility</a>
-                          </li>
-                          <li class="nav__item-footer"><a href="#">Klarna</a></li>
-                          <li class="nav__item-footer">
-                            <a href="#">Terms & Conditions</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Privacy Policy</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Tax Strategy</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Modern Slavery Act</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Gender Pay Gap</a>
-                          </li>
-                          <li class="nav__item-footer"><a href="#">Site Map</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-                <!-- <hr class="hr2"> -->
-                <div class="footer-icon">
-                  <div class="footer-icon-container">
-                    <div class="footer-icon-container-left">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer">
-                          <li class="nav__item-footer-a">
-                            <a href="#">DOWNLOAD OUR APP</a>
-                          </li>
-                          <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
-                          <svg class="icon-footer icon-hidden">
-                            <use
-                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                            ></use>
-                          </svg>
-                        </ul>
-                      </div>
-                      <hr class="hr2" />
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <img
-                          src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
-                          alt="app store"
-                          class="appStore"
-                        />
-                      </div>
-                    </div>
-                    <!-- <hr class="hr2"> -->
-                    <!-- <div class="footer-icon-container-right">
-      
-                    </div> -->
-                    <div class="footer-info-container-right">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer">
-                          <li class="nav__item-footer-a">
-                            <a href="#">FOLLOW US</a>
-                          </li>
-                          <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
-                          <svg class="icon-footer icon-hidden">
-                            <use
-                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                            ></use>
-                          </svg>
-                        </ul>
-                      </div>
-                      <hr class="hr2" />
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <ul class="nav__list-footer-2">
-                          <li class="nav__item-footer"><a href="#">Instagram</a></li>
-                          <li class="nav__item-footer"><a href="#">Facebook</a></li>
-                          <li class="nav__item-footer"><a href="#">Twitter</a></li>
-                          <li class="nav__item-footer"><a href="#">Youtube</a></li>
-                          <li class="nav__item-footer"><a href="#">Pinterest</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="copyright">
-                <p>Copyright&copy;Dario Amade 2021</p>
-              </div>
-            <!-- info end -->
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      </div>
-      <!-- Menu Icon Shows 1020px  😃 REMOVE VISIBILITY TO SEE-->
-      <div class="menu-bar-icon">
+       <!-- 🖐 ICON NAV BAR Menu Icon Shows 1020px  😃 REMOVE VISIBILITY TO SEE-->
+       <div class="menu-bar-icon"> <!-- TODO at HEADER -->
         <div class="close-menu-bar close-menu__icon">
           <svg class="icon-close icon-close__menu">
             <use href="src/img/sprite.svg#icon-close"></use>
@@ -1265,8 +717,11 @@
           </div>
         </div>
       </div>
-      <!--  -->
-      <header class="header">
+        <!--  -->
+        <!-- Partes to 👆  connect throghout the page 👨‍💻 -->
+        <!--  -->
+      <!--  IMPORTANT MAIN -->
+      <header class="header ">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -1360,9 +815,9 @@
           </ul>
         </nav>
       </header>
-      <div class="hero">
+      <div class="hero "><!-- IMPORTANT MAIN PAGE + SECTION-1 👇  bothmake the main page -->
         <!--  SALE TAB -1 SALE-->
-        <div class="nav-link-preview hidden">
+        <div class="nav-link-preview hidden"> <!-- //TODO   does show but not ok-->
           <div class="nav-link-preview-container-left">
             <ul class="nav__list-preview">
               <li class="nav__item-preview bold-title">
@@ -1423,7 +878,7 @@
         </div>
         <!--  -->
         <!--  SALE TAB -2 OUTLET-->
-        <div class="nav-link-preview hidden">
+        <div class="nav-link-preview hidden"> <!-- //TODO   does show but not ok-->
           <div class="nav-link-preview-container-left">
             <ul class="nav__list-preview">
               <li class="nav__item-preview bold-title">
@@ -1489,7 +944,7 @@
         <!--  -->
         <!--  -->
         <!--  SALE TAB -3 WOMEN-->
-        <div class="nav-link-preview hidden">
+        <div class="nav-link-preview hidden"> <!-- //TODO   does show but not ok-->
           <div class="nav-link-preview-container-left">
             <ul class="nav__list-preview">
               <li class="nav__item-preview bold-title">
@@ -1651,7 +1106,7 @@
         </div>
         <!--  -->
         <!--  SALE TAB -4 MEN-->
-        <div class="nav-link-preview hidden">
+        <div class="nav-link-preview hidden">  <!-- //TODO   does show but not ok-->
           <div class="nav-link-preview-container-left">
             <ul class="nav__list-preview">
               <li class="nav__item-preview bold-title">
@@ -1813,7 +1268,7 @@
         </div>
 
         <!--  Hidden TAB 1-->
-        <div class="hero-sale hidden">
+        <div class="hero-sale main-page ">  <!--Remove visibility //TODO  does show  at components-->
           <div class="hero-sale-container">
             <div class="hero-sale-container-top">
               <p class="junegull-a">S.A.L.E.</p>
@@ -1838,7 +1293,7 @@
         </div>
         <!--  -->
         <!--  Hidden TAB 2-->
-        <div class="women-tab hero-sale__content--1">
+        <div class="women-tab hero-sale__content--1">  <!-- //BUG  does show-->
           <div
             class="women-tab-left"
             style="background-image: url('/src/img/pic-17.jpg')"
@@ -1881,7 +1336,7 @@
         </div>
         <!--  -->
         <!--  Hidden TAB 3-->
-        <div class="women-tab hero-sale__content--1">
+        <div class="women-tab hero-sale__content--1 "> <!-- //BUG  does show-->
           <div class="women-tab-left">
             &nbsp;
             <div class="women-tab-left-logo-sale">
@@ -1920,42 +1375,10 @@
             </div>
           </div>
         </div>
-        <!--  -->
-     
-
-        <!-- <div class="overlay-1 hidden"></div>
-        <div class="hero-left">
-          <div class="">&nbsp;</div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-right-top">
-            <p class="junegull-a">S.A.L.E.</p>
-            <p class="align-left">SALE.ACROSS.<br>LITERRALLY.EVERTHING</p>
-            <p class="text-sale">UP TO 70% OFF</p>
-          </div>
-          <div class="hero-right-bottom">
-            <ul class="nav__list-bottom">
-              <li class="nav__item-bottom"><a href="#">ALL SALE</a></li>
-              <li class="nav__item-bottom"><a href="#">DRESSES</a></li>
-              <li class="nav__item-bottom"><a href="#">LEATHERS</a></li>
-            </ul>
-            <ul class="nav__list-bottom">
-              <li class="nav__item-bottom"><a href="#">T-SHIRTS</a></li>
-              <li class="nav__item-bottom"><a href="#">KNITWEAR</a></li>
-              <li class="nav__item-bottom"><a href="#">ACCESSORIES</a></li>
-            </ul>
-
-            <span class="outlet">
-              <ul class="nav__list-bottom">
-              <li class="nav__item-outlet"><a href="#">  *Includes Outlet</a></li>
-            </ul>
-            </span>
-          </div>
-        </div>    -->
       </div>
 
       <!--  Remove visibilty to see 👆 -->
-      <div class="section-1">
+      <div class="section-1 "> <!--IMPORTANTdisplays on the bottom -->
         <div class="slider">
           <div class="slider-container">
             <div class="slider-img">
@@ -2209,593 +1632,8 @@
           <p>Copyright&copy;Dario Amade 2021</p>
         </div>
       </div>
-
-      <div class="search-results">
-        <ul class="results">
-          <!-- 
-          <li class="preview">
-            <a class="preview__link preview__link--active" href="#23456">
-              <figure class="preview__fig">
-                <img src="src/img/test-1.jpg" alt="Test" />
-              </figure>
-              <div class="preview__data">
-                <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
-                <p class="preview__publisher">The Pioneer Woman</p>
-                <div class="preview__user-generated">
-                  <svg>
-                    <use href="src/img/icons.svg#icon-user"></use>
-                  </svg>
-                </div>
-              </div>
-            </a>
-          </li>
-           -->
-        </ul>
-
-        <div class="paginationOLD">
-          <!-- <button class="btn--inline pagination__btn--prev">
-            <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-arrow-left"></use>
-            </svg>
-            <span>Page 1</span>
-          </button>
-          <button class="btn--inline pagination__btn--next">
-            <span>Page 3</span>
-            <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button> -->
-        </div>
-      </div>
-
-      <div class="recipe">
-        <div class="message">
-          <div>
-            <svg>
-              <use href="src/img/icons.svg#icon-smile"></use>
-            </svg>
-          </div>
-          <p></p>
-        </div>
-
-        <!-- <div class="spinner">
-          <svg>
-            <use href="src/img/icons.svg#icon-loader"></use>
-          </svg>
-        </div> -->
-
-        <!-- <div class="error">
-            <div>
-              <svg>
-                <use href="src/img/icons.svg#icon-alert-triangle"></use>
-              </svg>
-            </div>
-            <p>No recipes found for your query. Please try again!</p>
-          </div> -->
-
-        <!--
-        <figure class="recipe__fig">
-          <img src="src/img/test-1.jpg" alt="Tomato" class="recipe__img" />
-          <h1 class="recipe__title">
-            <span>Pasta with tomato cream sauce</span>
-          </h1>
-        </figure>
-
-        <div class="recipe__details">
-          <div class="recipe__info">
-            <svg class="recipe__info-icon">
-              <use href="src/img/icons.svg#icon-clock"></use>
-            </svg>
-            <span class="recipe__info-data recipe__info-data--minutes">45</span>
-            <span class="recipe__info-text">minutes</span>
-          </div>
-          <div class="recipe__info">
-            <svg class="recipe__info-icon">
-              <use href="src/img/icons.svg#icon-users"></use>
-            </svg>
-            <span class="recipe__info-data recipe__info-data--people">4</span>
-            <span class="recipe__info-text">servings</span>
-
-            <div class="recipe__info-buttons">
-              <button class="btn--tiny btn--increase-servings">
-                <svg>
-                  <use href="src/img/icons.svg#icon-minus-circle"></use>
-                </svg>
-              </button>
-              <button class="btn--tiny btn--increase-servings">
-                <svg>
-                  <use href="src/img/icons.svg#icon-plus-circle"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="recipe__user-generated">
-            <svg>
-              <use href="src/img/icons.svg#icon-user"></use>
-            </svg>
-          </div>
-          <button class="btn--round">
-            <svg class="">
-              <use href="src/img/icons.svg#icon-bookmark-fill"></use>
-            </svg>
-          </button>
-        </div>
-
-        <div class="recipe__ingredients">
-          <h2 class="heading--2">Recipe ingredients</h2>
-          <ul class="recipe__ingredient-list">
-            <li class="recipe__ingredient">
-              <svg class="recipe__icon">
-                <use href="src/img/icons.svg#icon-check"></use>
-              </svg>
-              <div class="recipe__quantity">1000</div>
-              <div class="recipe__description">
-                <span class="recipe__unit">g</span>
-                pasta
-              </div>
-            </li>
-
-            <li class="recipe__ingredient">
-              <svg class="recipe__icon">
-                <use href="src/img/icons.svg#icon-check"></use>
-              </svg>
-              <div class="recipe__quantity">0.5</div>
-              <div class="recipe__description">
-                <span class="recipe__unit">cup</span>
-                ricotta cheese
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="recipe__directions">
-          <h2 class="heading--2">How to cook it</h2>
-          <p class="recipe__directions-text">
-            This recipe was carefully designed and tested by
-            <span class="recipe__publisher">The Pioneer Woman</span>. Please check out
-            directions at their website.
-          </p>
-          <a
-            class="btn--small recipe__btn"
-            href="http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/"
-            target="_blank"
-          >
-            <span>Directions</span>
-            <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </a>
-        </div>
-        -->
-      </div>
-      <div class="extra"></div>
-    </div>
-
-    <div class="overlay hidden"></div>
-    <div class="add-recipe-window hidden">
-      <button class="btn--close-modal">&times;</button>
-      <form class="upload">
-        <div class="upload__column">
-          <h3 class="upload__heading">Recipe data</h3>
-          <label>Title</label>
-          <input value="TEST" required name="title" type="text" />
-          <label>URL</label>
-          <input value="TEST" required name="sourceUrl" type="text" />
-          <label>Image URL</label>
-          <input value="TEST" required name="image" type="text" />
-          <label>Publisher</label>
-          <input value="TEST" required name="publisher" type="text" />
-          <label>Prep time</label>
-          <input value="23" required name="cookingTime" type="number" />
-          <label>Servings</label>
-          <input value="23" required name="servings" type="number" />
-        </div>
-
-        <div class="upload__column">
-          <h3 class="upload__heading">Ingredients</h3>
-          <label>Ingredient 1</label>
-          <input
-            value="0.5,kg,Rice"
-            type="text"
-            required
-            name="ingredient-1"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 2</label>
-          <input
-            value="1,,Avocado"
-            type="text"
-            name="ingredient-2"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 3</label>
-          <input
-            value=",,salt"
-            type="text"
-            name="ingredient-3"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 4</label>
-          <input
-            type="text"
-            name="ingredient-4"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 5</label>
-          <input
-            type="text"
-            name="ingredient-5"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 6</label>
-          <input
-            type="text"
-            name="ingredient-6"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-        </div>
-
-        <button class="btn upload__btn">
-          <svg>
-            <use href="src/img/icons.svg#icon-upload-cloud"></use>
-          </svg>
-          <span>Upload</span>
-        </button>
-      </form>
-    </div>
+    <!-- </div> -->
+    <!-- end of the container -->
+  </div>
   </body>
 </html>
-
-<!--  OLD CODE  -->
-
-<!-- <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <button class="nav__btn nav__btn--bookmarks">
-                <svg class="icon-test hidden-icons">
-                  <use href="src/img/sprite.svg#icon-menu1"></use>
-                </svg>
-                <span class="hidden-icons-text" style="color: #ec0606;"> SALE </span>
-              </button>
-            </li>
-            <li class="nav__item">
-              <button class="nav__btn nav__btn--add-recipe">
-                <svg class="icon-test hidden-icons">
-                  <use href="src/img/icons.svg#icon-magnifying-glass"></use>
-                </svg>
-                <span class="icon-test-name hidden-icons-text" style="color: #ec0606;">Outlet</span>
-              </button>
-            </li>
-            <li class="nav__item">
-              <button class="nav__btn nav__btn--bookmarks">
-                <span class="hidden-icons-text"> WOMEN </span>
-              </button>
-            </li>
-            <li class="nav__item">
-              <button class="nav__btn ">
-                <span class="signin hidden-icons-text">MEN</span>
-              </button>
-            </li>
-            <li class="nav__item">
-              <button class="nav__btn nav__btn--bookmarks">
-                <span class="hidden-icons-text"> SEARCH </span>
-              </button>
-            </li>
-          </ul>
-        </nav> -->
-<!-- 👆 Test -->
-<!--  -->
-
-<!-- <li class="nav__item">
-              <button class="nav__btn nav__btn--bookmarks">
-                <svg class="icon-test hidden">
-                  <use href="src/img/icons.svg#icon-heart"></use>
-                </svg>
-                <span> WOMEN </span>
-              </button>
-       
-              <div class="nav-link-preview">
-                <div class="nav-link-preview-container-left">
-                  <ul class="nav__list">
-                    <li class="nav__item">
-                      <span class="signin">Sign in</span>
-                    </li>
-                    <li><a href="#">Collection</a></li>
-                  </ul>
-                  <ul class="nav__list">
-                    <li class="nav__item">
-                        <span class="signin">Sign in</span>
-                    </li>
-                    <li><a href="#">Collection</a></li>
-                  </ul>
-                </div>
-                <div class="nav-link-preview-container-right">
-                  <div class="nav-link-preview-container-right-content" style="background: url(/src/img/pic-3.jpg);">
-                    <p class="junegull">S.A.L.E</p>
-                    <p class="text-sale">UP TO 70% OFF</p>
-                  </div>
-                
-                </div>
-              </div>
-       
-            </li> -->
-
-<!--  SALE TAB -1 SALE-->
-
-<!-- <div class="nav-link-preview hidden ">
-                  <div class="nav-link-preview-container-left">
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview bold-title"><a href="#" id="nav__item-preview-title">WOMEN</a></li>
-                      <li class="nav__item-preview"><a href="#">All Sale</a></li>
-                      <li class="nav__item-preview"><a href="#">Leather Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">Coats & Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">Dresses</a></li>
-                      <li class="nav__item-preview"><a href="#">Knitwear</a></li>
-                      <li class="nav__item-preview"><a href="#">T-shirts & Sweatshirts</a></li>
-                      <li class="nav__item-preview"><a href="#">Tops & Shirts</a></li>
-                      <li class="nav__item-preview"><a href="#">Jeans & Trousers</a></li>
-                      <li class="nav__item-preview"><a href="#">Skirts & Shorts</a></li>
-                      <li class="nav__item-preview"><a href="#">Handbags & Accesssories</a></li>
-                      <li class="nav__item-preview"><a href="#">Boots & Shoes</a></li>
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview" ><a href="#" id="nav__item-preview-title">MEN</a></li>
-                      <li class="nav__item-preview"><a href="#">All Sale</a></li>
-                      <li class="nav__item-preview"><a href="#">Leather Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">Coats & Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">Knitwear</a></li>
-                      <li class="nav__item-preview"><a href="#">Shirts</a></li>
-                      <li class="nav__item-preview"><a href="#">Jeans & Trousers</a></li>
-                      <li class="nav__item-preview"><a href="#">Ramskull</a></li>
-                      <li class="nav__item-preview"><a href="#">Polos</a></li>
-                      <li class="nav__item-preview"><a href="#">Boots & Shoes</a></li>
-                      <li class="nav__item-preview"><a href="#">Bags & Accesssories</a></li>
-                    </ul>
-                    <p class="text-free">Free UK Delivery on orders over £150 & UK Returns</p>
-
-                  </div>
-                  <div class="nav-link-preview-container-right">
-                    <div class="nav-link-preview-container-right-content">
-                      <div class="nav-link-preview-container-right-content-top">
-                        <p class="sale-thiny">S.A.L.E.</p>
-                        <p class="text-sale ">UP TO 70% OFF</p>
-
-                      </div>
-                      <div class="nav-link-preview-container-right-content-bottom">
-                        <p clas="text-shop">Shop Now</p>
-                        
-                      </div>
-                    
-                    </div>
-                  
-                  </div>
-                </div> -->
-<!--  -->
-<!--  SALE TAB -2 OUTLET-->
-<!-- <div class="nav-link-preview  hidden">
-                  <div class="nav-link-preview-container-left">
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview bold-title"><a href="#" id="nav__item-preview-title">WOMEN</a></li>
-                      <li class="nav__item-preview"><a href="#">All Outlet</a></li>
-                      <li class="nav__item-preview"><a href="#">Dresses</a></li>
-                      <li class="nav__item-preview"><a href="#">  T-Shirts & Sweatshirts</a></li>
-                      <li class="nav__item-preview"><a href="#"> Tops & Shirts</a></li>
-                      <li class="nav__item-preview"><a href="#"> Leather Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">  Coats & Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">     Knitwear</a></li>
-                      <li class="nav__item-preview"><a href="#">  Jeans & Trousers</a></li>
-                      <li class="nav__item-preview"><a href="#"> Skirts</a></li>
-                      <li class="nav__item-preview"><a href="#">Accessories</a></li>
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview" ><a href="#" id="nav__item-preview-title">MEN</a></li>
-                      <li class="nav__item-preview"><a href="#">All Outlet</a></li>
-                      <li class="nav__item-preview"><a href="#">  T-Shirts & Sweatshirts</a></li>
-                      <li class="nav__item-preview"><a href="#">Shirts</a></li>
-                      <li class="nav__item-preview"><a href="#"> Leather Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">  Coats & Jackets</a></li>
-                      <li class="nav__item-preview"><a href="#">     Knitwear</a></li>
-                      <li class="nav__item-preview"><a href="#">  Jeans & Trousers</a></li>
-                      <li class="nav__item-preview"><a href="#"> Polos</a></li>
-                      <li class="nav__item-preview"><a href="#">Accessories</a></li>
-                    </ul>
-                    <p class="text-free">Free UK Delivery on orders over £150 & UK Returns</p>
-
-                  </div>
-                  <div class="nav-link-preview-container-right">
-                    <div class="nav-link-preview-container-right-content">
-                      <div class="nav-link-preview-container-right-content-top-2">
-                        <p class="sale-thiny">S.A.L.E.</p>
-                        <span>UP TO 70% OFF</span>
-
-                      </div>
-                      <div class="nav-link-preview-container-right-content-bottom">
-                        <p clas="text-shopNow">Shop Now</p>
-                        
-                      </div>
-                    
-                    </div>
-                  
-                  </div>
-                </div> -->
-<!--  -->
-<!--  -->
-<!--  SALE TAB -3 WOMEN-->
-<!-- <div class="nav-link-preview  hidden ">
-                  <div class="nav-link-preview-container-left">
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview bold-title"><a href="#" id="nav__item-preview-title">SHOP</a></li>
-                      <li class="nav__item-preview"><a href="#">SALE</a></li>
-                      <li class="nav__item-preview"><a href="#">Outlet</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">  New Arrivals</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Best Sellers</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Limited Edition</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Loungewear</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Knitwear</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gifts for Her</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gifts for Him</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gift Cards</a></li>
-            
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview" ><a href="#" id="nav__item-preview-title">CLOTHING</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Dresses</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Knitwear</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Leather Jackets</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Sweatshirts & Hoodies</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Tops & Shirts</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">T-Shirts</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Jeans</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Trousers & Leggings</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Skirts & Shorts</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Co-ords </a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Tailoring</a></li>
-                   
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview bold-title"><a href="#" id="nav__item-preview-title">SHOES & ACCESSORIES</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">All Shoes</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;"> All Accessories</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Handbags</a> </li>
-                      <li class="nav__item-preview"><a href="#">Watches 50% OFF</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Jewellery</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Belts</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Face Masks</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Scarves</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Hats & Beanies</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gloves</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Wallets</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Fragrance</a> </li>
-                
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview" ><a href="#" id="nav__item-preview-title" >STORIES</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">All Stories</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Feature: Leather</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Feature: Cold Weather</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Campaign: All Day All Night Rubaccine</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Edit: Up All Night</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Edit: Logo</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Edit: Prints</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">@Rubaccine </a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Not For Sale</a> </li>
-                    </ul>
-                    <p class="text-free">Free UK Delivery on orders over £150 & UK Returns</p>
-
-                  </div>
-                  <div class="nav-link-preview-container-right">
-                    <div class="nav-link-preview-container-right-content">
-                      <div class="nav-link-preview-container-right-content-top-3">
-                        <p class="sale-thiny">S.A.L.E.</p>
-                        <span>UP TO 70% OFF</span>
-
-                      </div>
-                      <div class="nav-link-preview-container-right-content-bottom">
-                        <p clas="text-shopNow">Shop Now</p>
-                        
-                      </div>
-                    
-                    </div>
-                  
-                  </div>
-                </div> -->
-<!--  -->
-<!--  SALE TAB -4 MEN-->
-<!-- <div class="nav-link-preview  hiiden ">
-                  <div class="nav-link-preview-container-left">
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview bold-title"><a href="#" id="nav__item-preview-title">SHOP</a></li>
-                      <li class="nav__item-preview"><a href="#">SALE</a></li>
-                      <li class="nav__item-preview"><a href="#">Outlet</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">  New Arrivals</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Best Sellers</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Limited Edition</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Loungewear</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Knitwear</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gifts for Her</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gifts for Him</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gift Cards</a></li>
-            
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview" ><a href="#" id="nav__item-preview-title">CLOTHING</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Dresses</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Knitwear</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Leather Jackets</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Sweatshirts & Hoodies</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Tops & Shirts</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">T-Shirts</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Jeans</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Trousers & Leggings</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Skirts & Shorts</a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Co-ords </a></li>
-                       <li class="nav__item-preview"><a href="#" style="color: black;">Tailoring</a></li>
-                   
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview bold-title"><a href="#" id="nav__item-preview-title">SHOES & ACCESSORIES</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">All Shoes</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;"> All Accessories</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Handbags</a> </li>
-                      <li class="nav__item-preview"><a href="#">Watches 50% OFF</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Jewellery</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Belts</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Face Masks</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Scarves</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Hats & Beanies</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Gloves</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Wallets</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Fragrance</a> </li>
-                
-                    </ul>
-                    <ul class="nav__list-preview">
-                      <li class="nav__item-preview" ><a href="#" id="nav__item-preview-title" >STORIES</a></li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">All Stories</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Feature: Leather</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Feature: Cold Weather</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Campaign: All Day All Night Rubaccine</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Edit: Up All Night</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Edit: Logo</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Edit: Prints</a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">@Rubaccine </a> </li>
-                      <li class="nav__item-preview"><a href="#" style="color: black;">Not For Sale</a> </li>
-                    </ul>
-                    <p class="text-free">Free UK Delivery on orders over £150 & UK Returns</p>
-
-                  </div>
-                  <div class="nav-link-preview-container-right">
-                    <div class="nav-link-preview-container-right-content">
-                      <div class="nav-link-preview-container-right-content-top-4">
-                        <p class="sale-thiny">S.A.L.E.</p>
-                        <span>UP TO 70% OFF</span>
-
-                      </div>
-                      <div class="nav-link-preview-container-right-content-bottom">
-                        <p clas="text-shopNow">Shop Now</p>
-                        
-                      </div>
-                    
-                    </div>
-                  
-                  </div>
-                </div> -->
-
-<!--  -->
-
-<!-- <button class="nav__btn nav__btn--bookmarks">
-              <svg class="icon-test hidden">
-                <use href="src/img/icons.svg#icon-magnifying-glass"></use>
-              </svg>
-              <span> Search </span>
-            </button> -->
-
-<!-- <form class="search">
-              <input type="text" class="search__field" placeholder="Search Here">
-              <button class="btn search__btn">
-                <svg class="search__icon">
-                  <use href="src/img/icons.svg#icon-heart"></use>
-                </svg>
-                <span>Search</span>
-              </button>
-            </form> -->
