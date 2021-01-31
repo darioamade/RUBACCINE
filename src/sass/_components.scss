@@ -366,16 +366,39 @@
 }
 
 /************************ WOMEN TAB******************/
+/* 
 
-.women-tab {
-  flex: 1;
   margin-top: 10rem;
-  margin-top: 6.4rem; // BUG
+  margin-top: 6.4rem;// BUG
+  flex: 1;
   @media screen and (max-width: 768px) {
     margin-top: 0rem;
   }
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  // visibility: hidden;
+  // opacity: 0;
+  visibility: visible;
+  opacity: 1;
+*/
+
+.women-tab {
+  flex: 1;
+  height: 100%;
+  width: 100vw;
+  margin-top: 10rem;
+  margin-top: 6.4rem; // BUG
+  border: 2px solid red;
+  
+  @media screen and (max-width: 768px) {
+    margin-top: 0rem;
+  }
+
   transition: all 0.5s;
   display: flex;
   flex-direction: row;
@@ -384,7 +407,7 @@
     flex-direction: column;
   }
   &-left {
-    flex: 1;
+    flex: 0 0 50%;
     background-image: url('/src/img/pic-24.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -394,6 +417,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    border: 2px solid red;
     &-logo-sale {
       width: 100%;
       height: 100%;
@@ -408,7 +432,7 @@
   }
   &-right {
     background-color: #000;
-    flex: 1;
+    flex: 0 0 50%;
     width: 100%;
     height: 100vh;
     @media screen and (max-width: 1020px) {

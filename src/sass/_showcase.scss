@@ -647,7 +647,9 @@
     outline: none;
   }
 }
-
+.btn-add:focus{
+  outline: none;
+}
 .underline {
   text-decoration: underline;
 }

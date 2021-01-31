@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  border: 5px solid rgb(97, 252, 0);
   @media screen and (max-width: 1020px) {
     flex-direction: column;
   }
