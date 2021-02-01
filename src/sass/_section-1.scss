@@ -445,6 +445,10 @@ strong {
     overflow-y: hidden;
     white-space: nowrap;
     user-select: none;
+    &::-webkit-scrollbar {
+      // IMPORTANT remove scrollbar
+      display: none;
+    }
   }
   &-container {
     min-width: 20%;
