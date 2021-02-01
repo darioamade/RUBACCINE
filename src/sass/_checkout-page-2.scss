@@ -166,48 +166,186 @@
           justify-content: center;
           align-items: center;
           position: relative;
-          &::after{
-              position: absolute;
-              content: 'X';
-              top: 0;
-              right: 0;
-              color: rgb(60, 59, 59);
-              font-size: 1.6rem;
-              font-weight: 400;
-              padding-right: 10px;
-              padding-top: 6px;
-              cursor: pointer; 
-
+          &::after {
+            position: absolute;
+            content: 'X';
+            top: 0;
+            right: 0;
+            color: rgb(60, 59, 59);
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding-right: 10px;
+            padding-top: 6px;
+            cursor: pointer;
           }
         }
       }
     }
     &-gift {
       width: 80%;
-      margin: 2rem auto;
-      min-height: 4rem;
-      padding: 2rem 0;
-      position: relative;
+      margin: 1rem auto;
+      min-height: 0rem;
+
+      display: flex;
+      flex-direction: row;
+
       &-container {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        bottom: 0;
-        left:50%;
-        height: 100%;
-        transform: translate(0%,-50%);
-        @media screen and (max-width: 1020px) {
-            top: 0;
-            left:0;
-            height: 100%;
-            transform: none;
+          margin-bottom: .5rem;
+        flex: 1;
+        min-height: 0rem;
+        &:nth-child(1) {
+          @media screen and (max-width: 1020px) {
+            display: none;
           }
-         background-color: #DDD;
+        }
+
+        display: flex;
+        flex-direction: column;
+        &-value {
+          background-color: #ddd;
+          flex: 0 0 50%;
+          min-height: 0rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 1.5rem;
+          transition: all 0.2s;
+          span {
+            font-size: 2.2rem;
+            font-weight: 400;
+          }
+        }
+        &-btn {
+          flex: 0 0 50%;
+          display: flex;
+          min-height: auto;
+          background-color: #ddd;
+          display: flex;
+          padding: 0 1.5rem;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: .5rem;
+
+        //   max-height: 0;// IMPORTANT
+        //   opacity: 0;
+        //   visibility: hidden;
+
+          .btn-card-price {
+            background-color: #fff;
+            border: 1px solid #bbb;
+            display: inline-block;
+            font-size: 11px;
+            padding: 5px 1px;
+            margin-right: 4px;
+            width: 35px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 0rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            &:focus {
+              outline: none;
+            }
+            &:hover {
+              background: #444;
+              color: #fff;
+            }
+          }
+          .selected-gift {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px 20px 10px;
+            input[type='number'],
+            input[type='text'] {
+              border: 1px solid #000;
+              box-shadow: none;
+              font-family: 'AllSaints W01 Medium', Arial, Verdana, sans-serif;
+              letter-spacing: 1px;
+              font-size: 1.2rem;
+              width: 200px;
+              border-radius: 5px;
+              outline: none;
+              cursor: pointer;
+            }
+            label {
+              display: inline-block;
+              max-width: 100%;
+              margin-bottom: 5px;
+            }
+            .hideLabel {
+              display: none;
+            }
+          }
+          .btn-card-add {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            background: #444;
+            border: 0;
+            color: white;
+            padding: 8px 0;
+            width: 100px;
+
+            &:focus {
+              outline: none;
+            }
+            &:hover {
+              background: rgba(68, 68, 68, 0.708);
+              color: #fff;
+            }
+          }
+        }
       }
+
+      // @media screen and (max-width: 1020px) {
+      //     top: 0;
+      //     left:0;
+      //     height: 100%;
+      //     transform: none;
+      //   }
+      //  background-color: #DDD;
+      //  &-value{
+      //    flex: 1;
+      //      min-height: 4rem;
+      //      width: 100%;
+      //  }
+      //  &-btn{
+      //     flex: 1;
+      //     background-color: #DDD;
+      //     min-height: 10rem;
+      //     width: 100%;
+      // }
     }
   }
 }
+.icons-plus {
+  cursor: pointer;
+}
 
+.last{
+    border-top: 1px solid #000000 ;
+}
+.icons-plus-price{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+    padding: 10px 0;
+
+}
 .the-title {
   font-family: 'Times New Roman', Times, serif;
   text-transform: uppercase;
