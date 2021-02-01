@@ -84,24 +84,37 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
+          
         }
         &-colour {
           flex: 6;
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          @media screen and (max-width: 768px){
+            display: none;
+
+        }
         }
         &-size {
           flex: 3;
           display: flex;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 768px){
+            display: none;
+
+        }
         }
         &-quatity {
           flex: 3;
           display: flex;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 768px){
+            display: none;
+
+        }
         }
         &-price {
           flex: 3;
@@ -128,12 +141,19 @@
         &-img {
           flex: 2;
           width: 100%;
+          
         }
         &-colour {
           flex: 6;
           display: flex;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 768px){
+              display: none;
+
+          }
+          
+          
         }
         &-size {
           flex: 3;
@@ -141,6 +161,10 @@
           justify-content: center;
           flex-direction: column;
           align-items: center;
+          @media screen and (max-width: 768px){
+            display: none;
+
+        }
           img {
             width: 4rem;
             height: 4rem;
@@ -152,6 +176,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 768px){
+            display: none;
+
+        }
         }
         &-price {
           flex: 3;
@@ -218,6 +246,7 @@
         &-btn {
           flex: 0 0 50%;
           display: flex;
+          flex-wrap: wrap;
           min-height: auto;
           background-color: #ddd;
           display: flex;
@@ -310,28 +339,69 @@
           }
         }
       }
-
-      // @media screen and (max-width: 1020px) {
-      //     top: 0;
-      //     left:0;
-      //     height: 100%;
-      //     transform: none;
-      //   }
-      //  background-color: #DDD;
-      //  &-value{
-      //    flex: 1;
-      //      min-height: 4rem;
-      //      width: 100%;
-      //  }
-      //  &-btn{
-      //     flex: 1;
-      //     background-color: #DDD;
-      //     min-height: 10rem;
-      //     width: 100%;
-      // }
     }
   }
 }
+  .proceed-checkout{
+      border-bottom: 1px solid #000000;
+      display: flex;
+      width: 100%;
+
+      .content-checkout{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          text-decoration: none;
+  
+          .btn-proceed{
+            background: #007138;
+            margin-bottom: 12px;
+            margin-left: 10px;
+            color: white;
+             border-radius: 5px;
+            border: 1px solid #ddd;
+             display: block;
+           
+             text-align: center;
+            padding: 10px;
+             text-transform: uppercase;
+            font-size: 1.3em;
+            letter-spacing: .1em;
+            transition: all .2s;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background: #04bd60;
+            }
+  
+      
+
+          }
+          p{
+              font-size: 1.2rem;
+              font-weight: 400;
+              letter-spacing: .5px;
+              color: #000000;
+              margin-bottom: 20px;
+              a{
+                text-decoration: none;
+                list-style: none;
+                text-decoration: underline;
+                color: #000000;
+                font-size: 1.2rem;
+                font-weight: 400;
+                letter-spacing: .5px;
+              }
+          }
+      }
+ 
+}
+
+
 .icons-plus {
   cursor: pointer;
 }

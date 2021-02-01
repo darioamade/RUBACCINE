@@ -7436,6 +7436,12 @@ strong {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .checkout-page-2-container-item-header-colour {
+    display: none;
+  }
+}
+
 .checkout-page-2-container-item-header-size {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -7451,6 +7457,12 @@ strong {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .checkout-page-2-container-item-header-size {
+    display: none;
+  }
+}
+
 .checkout-page-2-container-item-header-quatity {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -7464,6 +7476,12 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-page-2-container-item-header-quatity {
+    display: none;
+  }
 }
 
 .checkout-page-2-container-item-header-price {
@@ -7532,6 +7550,12 @@ strong {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .checkout-page-2-container-item-product-colour {
+    display: none;
+  }
+}
+
 .checkout-page-2-container-item-product-size {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -7549,6 +7573,12 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-page-2-container-item-product-size {
+    display: none;
+  }
 }
 
 .checkout-page-2-container-item-product-size img {
@@ -7571,6 +7601,12 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-page-2-container-item-product-quatity {
+    display: none;
+  }
 }
 
 .checkout-page-2-container-item-product-price {
@@ -7687,6 +7723,8 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-height: auto;
   background-color: #ddd;
   display: flex;
@@ -7796,6 +7834,78 @@ strong {
 .checkout-page-2-container-gift-container-btn .btn-card-add:hover {
   background: rgba(68, 68, 68, 0.708);
   color: #fff;
+}
+
+.proceed-checkout {
+  border-bottom: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.proceed-checkout .content-checkout {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-decoration: none;
+}
+
+.proceed-checkout .content-checkout .btn-proceed {
+  background: #007138;
+  margin-bottom: 12px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.proceed-checkout .content-checkout .btn-proceed:focus {
+  outline: none;
+}
+
+.proceed-checkout .content-checkout .btn-proceed:hover {
+  background: #04bd60;
+}
+
+.proceed-checkout .content-checkout p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.proceed-checkout .content-checkout p a {
+  text-decoration: none;
+  list-style: none;
+  text-decoration: underline;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .5px;
 }
 
 .icons-plus {
