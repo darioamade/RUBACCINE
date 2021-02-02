@@ -7934,6 +7934,12 @@ strong {
   margin: 5.6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .the-title {
+    text-align: center;
+  }
+}
+
 .icon-title {
   width: 1.4rem;
   height: 1.4rem;

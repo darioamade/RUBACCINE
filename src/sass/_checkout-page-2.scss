@@ -425,6 +425,10 @@
   line-height: 40px;
   font-weight: 400;
   margin: 5.6rem;
+  @media screen and (max-width: 768px){
+    text-align: center;
+
+}
 }
 
 .icon-title {
