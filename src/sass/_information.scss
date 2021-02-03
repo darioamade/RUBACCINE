@@ -1,0 +1,206 @@
+.information {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+
+  // visibility: hidden;
+  // opacity: 0;
+
+  background-color: rgb(255, 255, 255);
+  z-index: 9000;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 8rem;
+  @media screen and (max-width: 1020px) {
+    padding: 0rem 2rem;
+  }
+  &-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &-details {
+      margin: 0 auto;
+      min-height: 14rem;
+      width: 100%;
+      border-top: 1px solid #444444;
+      display: flex;
+      flex-direction: column;
+
+      &-boxs {
+        margin: 0 auto;
+        width: 100%;
+        min-height: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        border: 1px solid red;
+        &-item {
+          width: 15rem;
+          height: 10rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid red;
+          &-box {
+            flex: 1;
+            width: 4rem;
+            max-height: 4rem;
+            border: 2px solid #000;
+            position: relative;
+          }
+          &-title {
+            flex: 1;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .sub-title {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  .secure-suppurt {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 30vh;
+    border-top: 1px solid #444444;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.check-svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+
+.with-bg-black {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-content-details-boxs-item-box::after {
+  position: absolute;
+  content: '';
+  border: 2px solid rgb(238, 5, 5);
+  width: 100%;
+  right: -100%;
+}
+
+.information-content-details-boxs {
+  #checkout-progress {
+    display: none;
+    margin-top: 2em;
+    text-align: center;
+  }
+  #checkout-progress ul {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#checkout-progress ul li.active {
+    font-weight: bold;
+}
+
+#checkout-progress ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2em;
+  height: 90px;
+  white-space: pre;
+}
+
+#checkout-progress .progress-details .progress-box {
+  margin-top: 2px;
+}
+
+
+
+ #checkout-progress ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2em;
+  height: 90px;
+  white-space: pre;
+}
+
+#checkout-progress ul li .progress-box {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px solid #bbb;
+  background-color: #fff;
+  z-index: 100;
+}
+
+
+#checkout-progress ul li.active .progress-box {
+  border: 2px solid black;
+}
+}
+
+#checkout-progress ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2em;
+  height: 90px;
+  white-space: pre;
+}
+#checkout-progress ul li .progress-transition {
+  width: 120px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  left: -62px;
+  top: 22px;
+  height: 0;
+  position: relative;
+  z-index: -10;
+}
+
+#checkout-progress ul li .progress-box {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px solid #bbb;
+  background-color: #fff;
+  z-index: 100;
+}

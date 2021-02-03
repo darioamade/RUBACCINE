@@ -1,4 +1,4 @@
-const hero = document.querySelector('.hero');
+/* const hero = document.querySelector('.hero');
 const hoveruv = document.querySelector('.hoveruv');
 const search = document.querySelector('.search');
 const overlay = document.querySelector('.overlay-1');
@@ -34,7 +34,7 @@ iconFooterOpen.addEventListener('click', function (e){
 iconFooterOpen.addEventListener('click', function(e){
   const
 
-})
+}) */
 
 /* 
 
@@ -205,3 +205,10 @@ function removeSlider() {
 
 //   e.target.style.display = 'inline';
 // });
+
+
+const amazon = document.querySelector('#AmazonPayButton');
+
+amazon.addEventListener('click', function(){
+  console.log('hey');
+})

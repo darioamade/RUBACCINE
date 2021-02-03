@@ -18,11 +18,92 @@
     <script defer src="src/js/controller.js"></script>
 
     <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+    
   </head>
 
   <body>
     <div class="container">
-      <div class="secure">
+
+     <div class="information">
+      <div class="information-content">
+        <p class="the-title">Rubaccine</p>
+        <div class="secure-email-back">
+          <svg class="icon-title ">
+            <use
+              href="src/img/sprite.svg#icon-arrow_back_ios"
+              
+            ></use>
+          </svg>
+          <p class="sub-title "> BACK TO SHOP</p>
+        </div>
+        <div class="information-content-details">
+          <div class="information-content-details-boxs">
+            <!-- <div class="information-content-details-boxs-item">
+              <div class="information-content-details-boxs-item-box with-bg-black">
+                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
+              </div>
+              <div class="information-content-details-boxs-item-title">
+                  <p class="sub-title ">   YOUR DETAILS</p>
+             </div>
+            </div>
+            <div class="information-content-details-boxs-item">
+              <div class="information-content-details-boxs-item-box with-bg-black">
+                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
+              </div>
+              <div class="information-content-details-boxs-item-title">
+                  <p class="sub-title "> DELIVERY </p>
+             </div>
+            </div>
+            <div class="information-content-details-boxs-item">
+              <div class="information-content-details-boxs-item-box with-bg-black">
+                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
+              </div>
+              <div class="information-content-details-boxs-item-title">
+                  <p class="sub-title "> REVIEW</p>
+             </div>
+            </div>
+            <div class="information-content-details-boxs-item">
+              <div class="information-content-details-boxs-item-box with-bg-black">
+                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
+              </div>
+              <div class="information-content-details-boxs-item-title">
+                  <p class="sub-title ">  PAYMENT</p>
+             </div>
+            </div> -->
+            <div id="checkout-progress" style="display: block;">
+              <ul>
+              <li class="progress-details active complete" id="progress-details" data-stage="details"><div class="progress-box "></div><span>Your details</span></li>
+              <li id="progress-delivery" data-stage="delivery" class="active"><div class="progress-transition"></div><div class="progress-box"></div><span>Delivery </span></li>
+              <li id="progress-review" data-stage="review"><div class="progress-transition"></div><div class="progress-box"></div><span>Review</span></li>
+              <li id="progress-payment" data-stage="payment"><div class="progress-transition"></div><div class="progress-box"></div><span>Payment</span></li>
+              </ul>
+              </div>
+          </div>
+
+        </div>
+       </div>  
+        <div class="secure-suppurt">
+          <div class="checkout-page-2-container-support">
+            <div class="checkout-page-2-container-support-title">
+              <p class="title-support">QUESTION OR SUPPORT?</p>
+              <p class="sub-support  ">Send us an email to: <b>ask@rubaccine.com</b></p>
+              <p class="sub-support  " style="margin-bottom: 0rem;">Where a member of our Customer Experience team will be happy to assist you.</p>
+              <p class="sub-support-1  ">We are open 9am-11pm BST Monday to Friday.</p>
+            </div>
+            <div class="checkout-page-2-container-support-methods">
+              <img src="/src/img/visa-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/mastercard-maestro-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/american-express-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/paypal-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/mastercard-4.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/klarna 1.svg" alt="icons" class="pay-icon6">
+            </div>
+          </div>
+
+        </div> 
+      </div>
+
+      <div class="secure"> <!-- NOTE GOOD 👈 remove  visibility  -->
         <div class="secure-email">
           <p class="the-title">Rubaccine</p>
           <div class="secure-email-back">
@@ -41,21 +122,45 @@
               <div class="secure-email-field-box-form">
                 <label for="login-email" class="control-label">Enter your email address</label>
                 <input id="login-email" class="form-control " type="email" name="login-email" aria-required="true" autocomplete="off">
-                <p class="form-secure-email">Please enter a valid email address</p>
+                <p class="form-secure-email error-email-val">Please enter a valid email address</p>
               </div>
               <div class="secure-email-field-box-btn">
-                <button>CONTINUE</button>
+                <button class="btn-continue-field">CONTINUE</button>
               </div>
             </div>
+            <p class="sub-title" style="padding-top: 10px;">OR</p>
+       
+            <div id="AmazonPayButton" class="amazon-button-wrapper">
+              <img class=" amazonpay-button-inner-image" style="cursor:pointer; max-height:45px;" 
+              alt="AmazonPay" id="OffAmazonPaymentsWidgets0" src="https://d23yuld0pofhhw.cloudfront.net/default/uk/live/lwa/gold/medium/PwA.png" tabindex="0">
+            </div>
+            <img src="/src/img/amazon-prime-seeklogo.com.svg" alt="svg" class="prime-svg">
+
 
           </div>
+        
         </div>
         <div class="secure-suppurt">
+          <div class="checkout-page-2-container-support">
+            <div class="checkout-page-2-container-support-title">
+              <p class="title-support">QUESTION OR SUPPORT?</p>
+              <p class="sub-support  ">Send us an email to: <b>ask@rubaccine.com</b></p>
+              <p class="sub-support  " style="margin-bottom: 0rem;">Where a member of our Customer Experience team will be happy to assist you.</p>
+              <p class="sub-support-1  ">We are open 9am-11pm BST Monday to Friday.</p>
+            </div>
+            <div class="checkout-page-2-container-support-methods">
+              <img src="/src/img/visa-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/mastercard-maestro-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/american-express-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/paypal-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/mastercard-4.svg" alt="icons" class="pay-icon">
+              <img src="/src/img/klarna 1.svg" alt="icons" class="pay-icon6">
+            </div>
+          </div>
   
         </div>
 
       </div>
-  
       <!-- Shopping cart Slider -->
       <div class="shopping "><!--NOTE GOOD 👈 remove  visibility  -->
         <div class="shopping-container shopping-bag--opened"><!--👈 remove class   shopping-bag--opened"-->
