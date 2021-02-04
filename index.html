@@ -38,49 +38,184 @@
         </div>
         <div class="information-content-details">
           <div class="information-content-details-boxs">
-            <!-- <div class="information-content-details-boxs-item">
-              <div class="information-content-details-boxs-item-box with-bg-black">
-                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
-              </div>
-              <div class="information-content-details-boxs-item-title">
-                  <p class="sub-title ">   YOUR DETAILS</p>
-             </div>
-            </div>
-            <div class="information-content-details-boxs-item">
-              <div class="information-content-details-boxs-item-box with-bg-black">
-                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
-              </div>
-              <div class="information-content-details-boxs-item-title">
-                  <p class="sub-title "> DELIVERY </p>
-             </div>
-            </div>
-            <div class="information-content-details-boxs-item">
-              <div class="information-content-details-boxs-item-box with-bg-black">
-                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
-              </div>
-              <div class="information-content-details-boxs-item-title">
-                  <p class="sub-title "> REVIEW</p>
-             </div>
-            </div>
-            <div class="information-content-details-boxs-item">
-              <div class="information-content-details-boxs-item-box with-bg-black">
-                <img src="/src/img/check-3.svg" alt="check" class="check-svg">
-              </div>
-              <div class="information-content-details-boxs-item-title">
-                  <p class="sub-title ">  PAYMENT</p>
-             </div>
-            </div> -->
             <div id="checkout-progress" style="display: block;">
               <ul>
-              <li class="progress-details active complete" id="progress-details" data-stage="details"><div class="progress-box "></div><span>Your details</span></li>
-              <li id="progress-delivery" data-stage="delivery" class="active"><div class="progress-transition"></div><div class="progress-box"></div><span>Delivery </span></li>
+              <li class="progress-details active " id="progress-details " data-stage="details"><div class="progress-box progress-box-with-bg-black"></div><span>Your details</span></li>
+              <!-- add class="active" after delivery -->
+              <li id="progress-delivery" data-stage="delivery" ><div class="progress-transition"></div><div class="progress-box"></div><span>Delivery </span></li>
               <li id="progress-review" data-stage="review"><div class="progress-transition"></div><div class="progress-box"></div><span>Review</span></li>
               <li id="progress-payment" data-stage="payment"><div class="progress-transition"></div><div class="progress-box"></div><span>Payment</span></li>
               </ul>
-              </div>
+            </div>
           </div>
 
         </div>
+
+
+
+        <div class="information-content-personal-info">
+          <div class="deliver-to-address">
+            <div class="deliver-to-address-wrapper">
+              <div class="deliver-to-address-wrapper-head">
+                <div class="deliver-to-address-wrapper-head-left">
+                  <svg class="icon-test">
+                    <use href="src/img/sprite.svg#icon-home2"></use>
+                  </svg>
+                  <p>DELIVERY TO AN ADDRESS
+             
+                    </p>
+                </div>
+                <div class="deliver-to-address-wrapper-head-right">
+                  <svg class="icon-test">
+                    <use href="src/img/sprite.svg#icon-map-pin-fill"></use>
+                  </svg>
+                  <p> DPD PICK UP</p>
+
+                </div>
+
+              </div>
+              <div class="deliver-to-address-wrapper-content">
+                <p class="empty-title"> Your address book is currently empty.</p>
+
+                <div class="deliver-to-address-wrapper-content-form">
+                  <div class="information-content-personal-info-form">
+                    <div class="information-content-personal-info-form-name">
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="First Name" class="form">First Name*</label>
+                        <input type="email" class="form__input" placeholder="First Name" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="Last Name" class="form">Last Name*</label>
+                        <input type="email" class="form__input" placeholder="Last Name" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="email" class="form">Address Line 1</label>
+                        <input type="email" class="form__input" placeholder="Address Line 1" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="email" class="form" style="color: a94442
+                        ;">Address Line 1</label>
+                        <input type="email" class="form__input" placeholder="Address Line 2" id=email required>
+                      </div>
+        
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="Telephone" class="form">Town</label>
+                        <input type="email" class="form__input" placeholder="Town" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="Telephone" class="form">Country/Province</label>
+                        <input type="email" class="form__input" placeholder="Country/Province" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="Telephone" class="form">Postcode</label>
+                        <input type="email" class="form__input" placeholder="Postcode" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="Telephone" class="form">Country</label>
+                        <input type="email" class="form__input" placeholder="Country" id=email required>
+                      </div>
+                      <div class="information-content-personal-info-form-name-single">
+                        <label for="email" class="form">&nbsp;</label>
+                        <span style="margin-top: 0rem;" type="email" class="form__input" placeholder="Telephone" id=email required>
+                          <p >United Kingdom | (Change country)</p>
+                          <div class="bill-address">
+                            <input type="checkbox" name="billAdress" value="billAdress">
+                            <label for="billAdress">Use as my billing address</label><br>
+                          </span>
+                        </div>
+                        
+  
+                      </div>
+                      
+                   
+                    
+                    
+                      
+                     
+                    </div>
+          
+        
+                  </div> 
+                  
+                </div>
+                <button class="btn-add-address">+ ADD A NEW ADDRESS</button>
+                <button class="btn-add-address">+ ADD A NEW ADDRESS</button>
+                <button class="btn-add-address">+ ADD A NEW ADDRESS</button>
+                <button class="btn-add-address">+ ADD A NEW ADDRESS</button>
+              </div>  
+       
+            </div>
+          </div>
+          <!--     💥    💥    💥    💥    💥 -->
+           <!-- <div class="information-content-personal-info-title">
+            <p>PERSONAL INFORMATION</p>
+          </div>
+          <div class="information-content-personal-info-sub-title">
+            <p>WELCOME NEW CUSTOMER</p>
+
+          </div>
+          <div class="information-content-personal-info-form">
+            <div class="information-content-personal-info-form-name">
+              <div class="information-content-personal-info-form-name-single">
+                <label for="First Name" class="form">First Name*</label>
+                <input type="email" class="form__input" placeholder="First Name" id=email required>
+              </div>
+              <div class="information-content-personal-info-form-name-single">
+                <label for="Last Name" class="form">Last Name*</label>
+                <input type="email" class="form__input" placeholder="Last Name" id=email required>
+              </div>
+              <div class="information-content-personal-info-form-name-single">
+                <label for="email" class="form">Email*</label>
+                <input type="email" class="form__input" placeholder="Email" id=email required>
+              </div>
+
+              <div class="information-content-personal-info-form-name-single">
+                <label for="Telephone" class="form">Telephone*</label>
+                <input type="email" class="form__input" placeholder="Telephone" id=email required>
+              </div>
+              <div class="information-content-personal-info-form-name-single">
+                <label for="email" class="form">&nbsp;</label>
+                <span type="email" class="form__input" placeholder="Telephone" id=email required>
+                  <p>You will receive updates on your order via Email. Privacy Policy</p>
+                </span>
+              </div>
+              <div class="information-content-personal-info-form-name-single">
+                <label for="email" class="form">&nbsp;</label>
+                <span type="email" class="form__input" placeholder="Telephone" id=email required>
+                  <button>DELIVERY ></button>
+                </span>
+              </div>
+               <div class="information-content-personal-info-form-name-single">
+                <label for="email" class="form">&nbsp;</label>
+                <span type="email" class="form__input" placeholder="Telephone" id=email required>
+                  <p>Continue and complete checkout with Rubaccine</p>
+                </span>
+              </div>
+              <div class="information-content-personal-info-form-name-single">
+                <label for="email" class="form">&nbsp;</label>
+                <span type="email" class="form__input" placeholder="Telephone" id=email required>
+                  <img class=" amazonpay-button-inner-image" style="cursor:pointer; max-height:45px;" 
+                  alt="AmazonPay" id="OffAmazonPaymentsWidgets0" src="https://d23yuld0pofhhw.cloudfront.net/default/uk/live/lwa/gold/medium/PwA.png" tabindex="0">
+                </span>
+              </div>
+              <div class="information-content-personal-info-form-name-single">
+                <label for="email" class="form">&nbsp;</label>
+                <span type="email" class="form__input" placeholder="Telephone" id=email required>
+                  <p>Continue and complete checkout by using your Amazon shipping and payment information</p>
+                </span>
+              </div>
+            </div>
+  
+
+          </div>  -->
+             <!--     💥    💥    💥    💥    💥 -->
+
+        </div>
+
+
+
+
+
        </div>  
         <div class="secure-suppurt">
           <div class="checkout-page-2-container-support">
@@ -159,7 +294,6 @@
           </div>
   
         </div>
-
       </div>
       <!-- Shopping cart Slider -->
       <div class="shopping "><!--NOTE GOOD 👈 remove  visibility  -->
