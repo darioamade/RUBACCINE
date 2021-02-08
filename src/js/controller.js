@@ -736,7 +736,7 @@ btnGreenDev.addEventListener('click', function () {
   deliverHidden.forEach(el => {
     el.classList.replace('active', 'desactived');
   });
-  progressDetails.classList.remove('actived')
+  // progressDetails.classList.remove('actived')
   
 });
 //Open second Form
@@ -766,7 +766,6 @@ formClose.addEventListener('click', function () {
 const mid = document.querySelector('.mid')
 const deliver = document.querySelector('.deliver')
 confirmAddress.addEventListener('click', function () {
-  console.log('heu');
    mid.style.visibility = 'hidden';
   mid.style.opacity = '0';
   mid.style.height = '0rem';
@@ -780,3 +779,25 @@ confirmAddress.addEventListener('click', function () {
     e.value = '';
   });
 });
+
+
+
+const btnGreenProceedReview = document.querySelector('.review-proceed-green')
+const btnGreyProceedReview = document.querySelector('.review-proceed-grey')
+const producReview = document.querySelector('.product-review')
+const contentTotal = document.querySelector('.content-total')
+btnGreyProceedReview.addEventListener('click', function(){
+  mid.style.visibility = 'visible';
+  mid.style.opacity = '1';
+  mid.style.height = 'auto';
+  mid.style.transform = 'scale(1,1)';
+  deliver.classList.add('deliver__to__address')
+})
+
+btnGreenProceedReview.addEventListener('click', function(e){
+  e.preventDefault()
+  formDeliveryAddress.textContent = ''
+  producReview.classList.remove('active')
+  //  contentTotal.classList.remove('active')
+
+}) 
