@@ -718,8 +718,9 @@ const informationContent = document.querySelector('.information-content');
 const emptyTitle = document.querySelector('empty-title');
 const confirmAddress = document.querySelector('.confirm__address');
 const formInput = document.querySelectorAll('.form__input');
+const emptyTitleSmall = document.querySelectorAll('.emptyTitleSmall');
 
-
+console.log(emptyTitleSmall);
 const progressDetails =document.querySelector('#progress-details')
 // INPUT VALUE
 
@@ -727,9 +728,10 @@ const firstName = document.querySelector('.firstName').value;
 const lastName = document.querySelector('.lastName').value;
 const emailAddress = document.querySelector('.emailAddress').value;
 const phoneNumber = document.querySelector('.phoneNumber').value;
-console.log(` my name is ${firstName}`);
+
 
 btnGreenDev.addEventListener('click', function () {
+
   firstHidden.forEach(el => {
     el.classList.add('active');
   });
@@ -742,7 +744,9 @@ btnGreenDev.addEventListener('click', function () {
 //Open second Form
 btnGreenDevAfter.addEventListener('click', function () {
 
-
+  emptyTitleSmall.forEach( el =>{
+    el.classList.add('active')
+  })
   formAddress.style.visibility = 'visible';
   formAddress.style.opacity = '1';
   formAddress.style.height = 'auto';
@@ -757,6 +761,9 @@ btnGreenDevAfter.addEventListener('click', function () {
 });
 // CLose Form
 formClose.addEventListener('click', function () {
+  emptyTitleSmall.forEach( el =>{
+    el.classList.removechec('active')
+  })
   formAddress.style.visibility = 'hidden';
   formAddress.style.opacity = '0';
   formAddress.style.height = '0rem';
@@ -801,3 +808,12 @@ btnGreenProceedReview.addEventListener('click', function(e){
   //  contentTotal.classList.remove('active')
 
 }) 
+
+const purchaseSecurely = document.querySelector('.purchaseSecurely')
+const paymentMethods  = document.querySelector('.payment-methods ')
+
+purchaseSecurely.addEventListener('click', function(){
+  producReview.classList.add('active')
+  paymentMethods.classList.remove('active')
+
+})
