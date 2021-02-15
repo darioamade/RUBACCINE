@@ -10997,6 +10997,7 @@ input[type='checkbox'] {
   border-radius: 4px;
   -webkit-transition: all .2s;
   transition: all .2s;
+  text-decoration: none;
   cursor: pointer;
 }
 

@@ -661,7 +661,7 @@
     border-radius: 5px;
 }
 
-.btn-black-pay{
+.btn-black-pay {
     background-color: #000;
     border: 1px solid #000;
     text-transform: uppercase;
@@ -676,6 +676,8 @@
     line-height: 1.42857143;
     border-radius: 4px;
     transition: all .2s;
+    text-decoration: none;
+
     cursor: pointer;
     &:hover{
         opacity: .65;
@@ -684,3 +686,5 @@
         outline: none;
     }
 }
+
+
