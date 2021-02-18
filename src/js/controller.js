@@ -719,8 +719,7 @@ const emptyTitle = document.querySelector('empty-title');
 const confirmAddress = document.querySelector('.confirm__address');
 const formInput = document.querySelectorAll('.form__input');
 
-
-const progressDetails =document.querySelector('#progress-details')
+const progressDetails = document.querySelector('.progress-details');
 // INPUT VALUE
 
 const firstName = document.querySelector('.firstName').value;
@@ -736,22 +735,16 @@ btnGreenDev.addEventListener('click', function () {
   deliverHidden.forEach(el => {
     el.classList.replace('active', 'desactived');
   });
-  progressDetails.classList.remove('actived')
-  
+  progressDetails.classList.remove('actived');
 });
 //Open second Form
 btnGreenDevAfter.addEventListener('click', function () {
-
-
   formAddress.style.visibility = 'visible';
   formAddress.style.opacity = '1';
   formAddress.style.height = 'auto';
   formAddress.style.transform = 'scale(1,1)';
   formInput.forEach(e => {
     e.value = '';
- 
-
-
   });
   console.log('clear');
 });
@@ -763,18 +756,15 @@ formClose.addEventListener('click', function () {
 });
 
 // Bottom Black  Confirm Address >
-const mid = document.querySelector('.mid')
-const deliver = document.querySelector('.deliver')
+const mid = document.querySelector('.mid');
+const deliver = document.querySelector('.deliver');
 confirmAddress.addEventListener('click', function () {
   console.log('heu');
-   mid.style.visibility = 'hidden';
+  mid.style.visibility = 'hidden';
   mid.style.opacity = '0';
   mid.style.height = '0rem';
   mid.style.transform = 'scale(1,0)';
-  deliver.classList.remove('deliver__to__address')
-
-
-
+  deliver.classList.remove('deliver__to__address');
 
   formInput.forEach(e => {
     e.value = '';
